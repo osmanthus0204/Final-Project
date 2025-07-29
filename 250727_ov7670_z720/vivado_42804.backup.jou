@@ -1,0 +1,239 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 28 12:31:16 2025
+# Process ID: 42804
+# Current directory: D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25720 D:\work_2\FPGA_Harman_Final_Project\250727_ov7670_z720\250727_ov7670_z720.xpr
+# Log file: D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/vivado.log
+# Journal file: D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.srcs/sources_1/imports/250718_HDMI/fndController.v] -no_script -reset -force -quiet
+remove_files  D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.srcs/sources_1/imports/250718_HDMI/fndController.v
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+import_files -force -norecurse D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/sqrt_table.mem
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.srcs/sources_1/imports/new/sqrt_table.mem] -no_script -reset -force -quiet
+remove_files  D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.srcs/sources_1/imports/new/sqrt_table.mem
+add_files -norecurse D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.srcs/sources_1/imports/new/sqrt_table.mem
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+ipx::package_project -root_dir d:/work_2/fpga_harman_final_project/250727_ov7670_z720/250727_ov7670_z720.srcs -vendor xilinx.com -library user -taxonomy /UserIP
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  d:/work_2/fpga_harman_final_project/250727_ov7670_z720/250727_ov7670_z720.srcs [current_project]
+update_ip_catalog
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:OV7640_HDMI_Display:1.0 OV7640_HDMI_Display_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins OV7640_HDMI_Display_0/clk]
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+export_ip_user_files -of_objects  [get_files D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.srcs/sources_1/bd/design_1/design_1.bd
+ipx::unload_core d:/work_2/fpga_harman_final_project/250727_ov7670_z720/250727_ov7670_z720.srcs/component.xml
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

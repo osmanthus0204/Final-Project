@@ -1,0 +1,832 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jul 28 19:03:50 2025
+| Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file OV7670_VGA_Display_control_sets_placed.rpt
+| Design       : OV7670_VGA_Display
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   754 |
+|    Minimum number of control sets                        |   754 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |  1366 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   754 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |   464 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |     6 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |   257 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    15 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             152 |           80 |
+| No           | No                    | Yes                    |             690 |          221 |
+| No           | Yes                   | No                     |              41 |           13 |
+| Yes          | No                    | No                     |              18 |            6 |
+| Yes          | No                    | Yes                    |             258 |           69 |
+| Yes          | Yes                   | No                     |            4235 |         2146 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+---------------------------------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+|            Clock Signal            |                            Enable Signal                            |           Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------+---------------------------------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                     | U_SCCB_intf/U_SCCB_controlUnit/r_sda_i_1_n_0                        | reset_IBUF                           |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                     | U_SCCB_intf/U_SCCB_controlUnit/r_scl                                | reset_IBUF                           |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                     | U_uart/tx_next                                                      | reset_IBUF                           |                1 |              2 |         2.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_159                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_208                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_214                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_218                         |                                      |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                     | U_uart/tick_cnt_next                                                | reset_IBUF                           |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                     | U_uart/FSM_onehot_state[3]_i_1_n_0                                  | reset_IBUF                           |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_190                         |                                      |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                     | U_SCCB_intf/U_SCCB_controlUnit/bitCount[3]_i_1_n_0                  | reset_IBUF                           |                2 |              4 |         2.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_181                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_199                         |                                      |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                     | U_gesture/FSM_sequential_state[3]_i_1_n_0                           | reset_IBUF                           |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_169                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_18                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_223                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_229                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_24                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_265                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_275                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_277                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_278                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_269                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_258                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_234                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_240                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_241                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_251                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_253                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_255                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_268                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_271                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_276                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_230                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_238                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_242                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_222                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_245                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_231                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_232                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_225                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_239                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_246                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_226                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_247                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_244                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_250                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_254                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_256                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_257                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_233                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_264                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_267                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_266                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_27                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_228                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_263                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_284                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_270                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_272                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_221                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_249                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_224                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_227                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_23                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_235                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_236                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_237                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_248                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_243                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_220                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_25                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_252                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_259                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_26                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_260                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_261                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_7                           |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_81                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_76                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_72                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_73                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_71                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_69                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_70                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_67                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_79                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_75                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_78                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_68                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_85                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_74                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_77                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_273                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_84                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_83                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_82                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_80                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_8                           |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_45                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_61                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_56                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_282                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_281                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_50                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_49                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_39                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_289                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_296                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_47                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_287                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_41                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_38                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_36                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_32                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_262                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_279                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_3                           |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_290                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_283                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_28                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_294                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_4                           |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_280                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_63                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_62                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_6                           |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_298                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_286                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_51                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_30                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_33                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_59                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_55                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_285                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_299                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_58                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_40                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_46                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_37                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_57                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_52                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_31                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_35                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_292                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_42                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_293                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_291                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_43                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_34                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_66                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_44                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_29                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_53                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_60                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_54                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_48                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_5                           |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_288                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_91                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_89                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_86                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_96                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_99                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_93                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_88                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_97                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_94                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_90                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_92                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_98                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_87                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_9                           |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_95                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_297                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_295                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_65                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_64                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_101                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_102                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_103                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_104                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_0                           |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_1                           |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_10                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_100                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_158                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_274                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_118                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_140                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_16                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_160                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_161                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_162                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_131                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_12                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_119                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_124                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_13                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_141                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_142                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_113                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_115                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_114                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_107                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_136                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_109                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_11                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_120                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_117                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_123                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_129                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_132                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_137                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_138                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_125                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_122                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_111                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_108                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_134                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_139                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_14                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_143                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_145                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_147                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_110                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_133                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_148                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_106                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_151                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_127                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_128                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_116                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_130                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_15                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_150                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_152                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_126                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_149                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_121                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_144                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_146                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_153                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_154                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_155                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_156                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_105                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_112                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_135                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_157                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_179                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_188                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_192                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_197                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_202                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_203                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_205                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_217                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_219                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_19                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_196                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_187                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_204                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_209                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_186                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_21                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_22                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_185                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_191                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_2                           |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_173                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_180                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_195                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_200                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_189                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_183                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_164                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_167                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_175                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_177                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_198                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_174                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_194                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_178                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_165                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_20                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_201                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_17                          |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_166                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_172                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_207                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_163                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_170                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_168                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_176                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_182                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_210                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_211                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_212                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_213                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_184                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_206                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_215                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_171                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_216                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[0]_193                         |                                      |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][28]_58                    | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][1]_42                     | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][2]_43                     | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][99]_149                   | reset_IBUF                           |                5 |              5 |         1.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][98]_154                   | reset_IBUF                           |                5 |              5 |         1.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][95]_17                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][159]_28                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][96]_111                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][156]_67                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][152]_131                  | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][136]_120                  | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][124]_93                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][12]_51                    | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][153]_65                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][142]_11                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][145]_38                   | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][13]_52                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][149]_63                   | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][123]_125                  | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][122]_81                   | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][140]_90                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][138]_70                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][133]_36                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][127]_19                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][16]_72                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][158]_27                   | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][139]_37                   | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][14]_53                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][17]_54                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][15]_12                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][34]_117                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][31]_13                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][148]_71                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][144]_62                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][29]_59                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][154]_66                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][25]_55                    | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][24]_30                    | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][155]_134                  | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][131]_61                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][150]_64                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][134]_10                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][141]_121                  | reset_IBUF                           |                5 |              5 |         1.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][137]_60                   | reset_IBUF                           |                5 |              5 |         1.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][125]_82                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][118]_106                  | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][117]_103                  | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][116]_112                  | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][115]_128                  | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][114]_155                  | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][10]_49                    | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][108]_92                   | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][0]_74                     | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][107]_126                  | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][104]_79                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][102]_105                  | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][106]_80                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][112]_113                  | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][101]_102                  | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][111]_18                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][103]_4                    | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][100]_94                   | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][120]_114                  | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][11]_50                    | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][119]_5                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][105]_146                  | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[6]_rep__5_5                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[6]_rep__6_8                    | reset_IBUF                           |                5 |              5 |         1.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/h_counter_reg[5]_rep__2_1                    | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][113]_127                  | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][30]_24                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][129]_35                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][19]_150                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][147]_39                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][130]_119                  | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][121]_115                  | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][18]_73                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][22]_6                     | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][23]_22                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][33]_107                   | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][132]_69                   | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][146]_133                  | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][135]_0                    | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][143]_20                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][151]_23                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][26]_140                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][27]_137                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][32]_116                   | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][20]_56                    | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][128]_118                  | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][157]_68                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][126]_89                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][21]_57                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][74]_148                   | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][61]_86                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][62]_25                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][36]_98                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][42]_142                   | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][58]_32                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][63]_15                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][65]_109                   | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][79]_16                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][35]_153                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][81]_136                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][5]_45                     | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][64]_132                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][69]_97                    | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][73]_75                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][82]_122                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][86]_9                     | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][89]_33                    | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][75]_141                   | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][39]_3                     | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][53]_101                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][41]_147                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][40]_76                    | reset_IBUF                           |                5 |              5 |         1.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][70]_7                     | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][3]_44                     | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][56]_31                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][44]_83                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][47]_14                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][37]_95                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][77]_129                   | reset_IBUF                           |                5 |              5 |         1.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][80]_144                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][54]_104                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][88]_77                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][78]_8                     | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][45]_84                    | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][8]_41                     | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][91]_139                   | reset_IBUF                           |                5 |              5 |         1.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][4]_40                     | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][46]_88                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][52]_100                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][60]_91                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][43]_124                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][50]_152                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][48]_110                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][67]_156                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][57]_29                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][72]_78                    | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][71]_2                     | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][76]_85                    | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][85]_130                   | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][66]_143                   | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][92]_34                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][83]_151                   | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][51]_108                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][93]_87                    | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][55]_21                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][68]_96                    | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][84]_99                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][59]_138                   | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][6]_46                     | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][38]_1                     | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][90]_123                   | reset_IBUF                           |                1 |              5 |         5.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][49]_135                   | reset_IBUF                           |                2 |              5 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][7]_47                     | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][94]_26                    | reset_IBUF                           |                3 |              5 |         1.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][97]_145                   | reset_IBUF                           |                4 |              5 |         1.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/line_buffer_reg[4][9]_48                     | reset_IBUF                           |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG                     | U_SCCB_intf/U_SCCB_controlUnit/FSM_onehot_sda_state[5]_i_1_n_0      | reset_IBUF                           |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG                     | U_SCCB_intf/U_SCCB_controlUnit/dataBit[5]_i_1_n_0                   | reset_IBUF                           |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG                     | U_gesture/E[0]                                                      | reset_IBUF                           |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG                     | U_SCCB_intf/U_SCCB_controlUnit/r_addr[0]_i_1_n_0                    | reset_IBUF                           |                2 |              7 |         3.50 |
+|  U_btn_debounce_StartButton/r_1khz |                                                                     | reset_IBUF                           |                2 |              8 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/v_counter0                                   | reset_IBUF                           |                2 |              8 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/pix_data[15]_i_1_n_0                         | reset_IBUF                           |                1 |              8 |         8.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/pix_data[4]                                  | reset_IBUF                           |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                     | U_gesture/gesture_detected_next                                     | reset_IBUF                           |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     |                                                                     | U_SCCB_intf/U_SCCB_controlUnit/SR[0] |                4 |              9 |         2.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_MeanShiftCore/U_MeanShift_ControlUnit/x_next_0                    | reset_IBUF                           |                4 |             10 |         2.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_MeanShiftCore/U_MeanShift_ControlUnit/y_next_1                    | reset_IBUF                           |                3 |             10 |         3.33 |
+|  U_OV7670_Clk_Gen/CLK              |                                                                     | reset_IBUF                           |                4 |             10 |         2.50 |
+|  U_OV7670_Clk_Gen/CLK              | U_VGA_Controller/U_Pix_Counter/v_counter                            | reset_IBUF                           |                5 |             10 |         2.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[14][12]_i_1_n_0  | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[172][12]_i_1_n_0 | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[166][12]_i_1_n_0 | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[154][12]_i_1_n_0 | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[184][12]_i_1_n_0 | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[170][12]_i_1_n_0 | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[167][12]_i_1_n_0 | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[178][12]_i_1_n_0 | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[160][12]_i_1_n_0 | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[176][12]_i_1_n_0 | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[169][12]_i_1_n_0 | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[161][12]_i_1_n_0 | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[153][12]_i_1_n_0 | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[180][12]_i_1_n_0 | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[149][12]_i_1_n_0 | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[150][12]_i_1_n_0 | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[177][12]_i_1_n_0 | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[147][12]_i_1_n_0 | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[18][12]_i_1_n_0  | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[165][12]_i_1_n_0 | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[159][12]_i_1_n_0 | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[163][12]_i_1_n_0 | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[192][12]_i_1_n_0 | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[145][12]_i_1_n_0 | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[144][12]_i_1_n_0 | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[142][12]_i_1_n_0 | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[141][12]_i_1_n_0 | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[108][12]_i_1_n_0 | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[139][12]_i_1_n_0 | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[106][12]_i_1_n_0 | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[136][12]_i_1_n_0 | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[132][12]_i_1_n_0 | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[12][12]_i_1_n_0  | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[112][12]_i_1_n_0 | reset_IBUF                           |                2 |             13 |         6.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[130][12]_i_1_n_0 | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[113][12]_i_1_n_0 | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[127][12]_i_1_n_0 | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[101][12]_i_1_n_0 | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[105][12]_i_1_n_0 | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[120][12]_i_1_n_0 | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[116][12]_i_1_n_0 | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[102][12]_i_1_n_0 | reset_IBUF                           |               11 |             13 |         1.18 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[10][12]_i_1_n_0  | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[114][12]_i_1_n_0 | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[11][12]_i_1_n_0  | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_14[0]     | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_16[0]     | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_10[0]     | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_27[0]     | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_3[0]      | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_22[0]     | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_74[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_8[0]      | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[216][12]_i_1_n_0 | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_6[0]      | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_9[0]      | reset_IBUF                           |               12 |             13 |         1.08 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_7[0]      | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[1]_1[0]             | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[156][12]_i_1_n_0 | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_50[0]        | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[83][12]_i_1_n_0  | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[86][12]_i_1_n_0  | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[66][12]_i_1_n_0  | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[85][12]_i_1_n_0  | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[95][12]_i_1_n_0  | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[68][12]_i_1_n_0  | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[77][12]_i_1_n_0  | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[6][12]_i_1_n_0   | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[96][12]_i_1_n_0  | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[89][12]_i_1_n_0  | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[71][12]_i_1_n_0  | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[72][12]_i_1_n_0  | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[65][12]_i_1_n_0  | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[81][12]_i_1_n_0  | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[99][12]_i_1_n_0  | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[80][12]_i_1_n_0  | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[97][12]_i_1_n_0  | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[92][12]_i_1_n_0  | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[78][12]_i_1_n_0  | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[9][12]_i_1_n_0   | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[7][12]_i_1_n_0   | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[90][12]_i_1_n_0  | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[75][12]_i_1_n_0  | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[29][12]_i_1_n_0  | reset_IBUF                           |               11 |             13 |         1.18 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[55][12]_i_1_n_0  | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[30][12]_i_1_n_0  | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[54][12]_i_1_n_0  | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[4][12]_i_1_n_0   | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[62][12]_i_1_n_0  | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[61][12]_i_1_n_0  | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[53][12]_i_1_n_0  | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[39][12]_i_1_n_0  | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[5][12]_i_1_n_0   | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[58][12]_i_1_n_0  | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[46][12]_i_1_n_0  | reset_IBUF                           |               11 |             13 |         1.18 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[43][12]_i_1_n_0  | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[49][12]_i_1_n_0  | reset_IBUF                           |               13 |             13 |         1.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[36][12]_i_1_n_0  | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[34][12]_i_1_n_0  | reset_IBUF                           |               11 |             13 |         1.18 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[31][12]_i_1_n_0  | reset_IBUF                           |               11 |             13 |         1.18 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[27][12]_i_1_n_0  | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[24][12]_i_1_n_0  | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[60][12]_i_1_n_0  | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[47][12]_i_1_n_0  | reset_IBUF                           |               13 |             13 |         1.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[51][12]_i_1_n_0  | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[40][12]_i_1_n_0  | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[2][12]_i_1_n_0   | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[248][12]_i_1_n_0 | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[59][12]_i_1_n_0  | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[57][12]_i_1_n_0  | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[48][12]_i_1_n_0  | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[45][12]_i_1_n_0  | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[225][12]_i_1_n_0 | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[196][12]_i_1_n_0 | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[226][12]_i_1_n_0 | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[224][12]_i_1_n_0 | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[220][12]_i_1_n_0 | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[218][12]_i_1_n_0 | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[217][12]_i_1_n_0 | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[214][12]_i_1_n_0 | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[211][12]_i_1_n_0 | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[202][12]_i_1_n_0 | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[197][12]_i_1_n_0 | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[194][12]_i_1_n_0 | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[213][12]_i_1_n_0 | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[210][12]_i_1_n_0 | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[204][12]_i_1_n_0 | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[1][12]_i_1_n_0   | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[20][12]_i_1_n_0  | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[209][12]_i_1_n_0 | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[201][12]_i_1_n_0 | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[200][12]_i_1_n_0 | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[195][12]_i_1_n_0 | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[198][12]_i_1_n_0 | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[208][12]_i_1_n_0 | reset_IBUF                           |                2 |             13 |         6.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[244][12]_i_1_n_0 | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[228][12]_i_1_n_0 | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[242][12]_i_1_n_0 | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[239][12]_i_1_n_0 | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[232][12]_i_1_n_0 | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[241][12]_i_1_n_0 | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[240][12]_i_1_n_0 | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[212][12]_i_1_n_0 | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[193][12]_i_1_n_0 | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_count_reg[191][12]_i_1_n_0 | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_11[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_31[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_10[0]        | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_12[0]        | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_21[0]        | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_26[0]        | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_28[0]        | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_22[0]        | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_25[0]        | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_23[0]        | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_30[0]        | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/E[0]                                         | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_34[0]        | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_15[0]        | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_27[0]        | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_36[0]        | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_42[0]        | reset_IBUF                           |               11 |             13 |         1.18 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_1[0]         | reset_IBUF                           |               12 |             13 |         1.08 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_29[0]        | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_37[0]        | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_43[0]        | reset_IBUF                           |               12 |             13 |         1.08 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_45[0]        | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_46[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_20[0]        | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_44[0]        | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_47[0]        | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_48[0]        | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_17[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_3[0]         | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_38[0]        | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_4[0]         | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_40[0]        | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_5[0]         | reset_IBUF                           |                2 |             13 |         6.50 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_0[0]         | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_13[0]        | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_52[0]        | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_53[0]        | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_19[0]        | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_49[0]        | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_32[0]        | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_24[0]        | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_54[0]        | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_51[0]        | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_18[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep[0]           | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_33[0]        | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_55[0]        | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_56[0]        | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_57[0]        | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_16[0]        | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_14[0]        | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_2[0]         | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_35[0]        | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_39[0]        | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_41[0]        | reset_IBUF                           |               11 |             13 |         1.18 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_18[0]     | reset_IBUF                           |               11 |             13 |         1.18 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_28[0]     | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_61[0]        | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_30[0]     | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_77[0]        | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_34[0]     | reset_IBUF                           |                3 |             13 |         4.33 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_5[0]      | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_79[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_81[0]        | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_8[0]         | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_23[0]     | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_66[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_72[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_1[0]      | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_78[0]        | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_11[0]     | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_35[0]     | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_62[0]        | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_68[0]        | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_7[0]         | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_73[0]        | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_15[0]     | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_2[0]      | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_63[0]        | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_24[0]     | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_71[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_0[0]      | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_20[0]     | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_70[0]        | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_21[0]     | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_26[0]     | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_65[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_29[0]     | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_31[0]     | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0[0]        | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_84[0]        | reset_IBUF                           |               11 |             13 |         1.18 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_32[0]     | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_33[0]     | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_4[0]      | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_6[0]         | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_76[0]        | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_69[0]        | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_80[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_82[0]        | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_59[0]        | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_75[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_9[0]         | reset_IBUF                           |                5 |             13 |         2.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_60[0]        | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_83[0]        | reset_IBUF                           |                7 |             13 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_12[0]     | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_13[0]     | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_17[0]     | reset_IBUF                           |                8 |             13 |         1.62 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_67[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_19[0]     | reset_IBUF                           |               10 |             13 |         1.30 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep__0_25[0]     | reset_IBUF                           |                6 |             13 |         2.17 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_58[0]        | reset_IBUF                           |                9 |             13 |         1.44 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_rep_64[0]        | reset_IBUF                           |                4 |             13 |         3.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_ISP_PEN/U_DENSE_PIXEL/max_col                                     | reset_IBUF                           |                5 |             15 |         3.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_ISP_PEN/U_DENSE_PIXEL/E[0]                                        | reset_IBUF                           |                6 |             16 |         2.67 |
+|  clk_10hz_BUFG                     |                                                                     | reset_IBUF                           |                4 |             16 |         4.00 |
+|  clk_10hz_BUFG                     | dis_fclk/y_dis[8]_i_1_n_0                                           |                                      |                6 |             18 |         3.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[1]_0                |                                      |                5 |             18 |         3.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[1]                  |                                      |                5 |             18 |         3.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]_0                |                                      |                5 |             18 |         3.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/FSM_sequential_state_reg[0]                  |                                      |                5 |             18 |         3.60 |
+|  ov7670_pclk_IBUF_BUFG             | U_MeanShiftCore/U_MeanShift_ControlUnit/E[0]                        | reset_IBUF                           |                6 |             20 |         3.33 |
+|  ov7670_pclk_IBUF_BUFG             | scale_Calc/E[0]                                                     | reset_IBUF                           |               11 |             32 |         2.91 |
+|  ov7670_pclk_IBUF_BUFG             | U_Histogram/U_Histogram_Control_Unit/hue_index_reg[7]_i_1_n_0       | reset_IBUF                           |                9 |             38 |         4.22 |
+|  ov7670_pclk_IBUF_BUFG             |                                                                     |                                      |               22 |             44 |         2.00 |
+|  clk_IBUF_BUFG                     |                                                                     |                                      |               58 |            108 |         1.86 |
+|  ov7670_pclk_IBUF_BUFG             | U_MeanShiftCore/U_MeanShift_ControlUnit/w_sum_reg0                  | reset_IBUF                           |               25 |            123 |         4.92 |
+|  clk_IBUF_BUFG                     |                                                                     | reset_IBUF                           |               45 |            126 |         2.80 |
+|  ov7670_pclk_IBUF_BUFG             |                                                                     | reset_IBUF                           |              175 |            562 |         3.21 |
++------------------------------------+---------------------------------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+
+

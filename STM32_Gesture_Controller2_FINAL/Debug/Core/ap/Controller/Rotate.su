@@ -1,0 +1,5 @@
+../Core/ap/Controller/Rotate.c:10:6:Motor_Init	8	static
+../Core/ap/Controller/Rotate.c:14:6:Motor_Execute	16	static
+../Core/ap/Controller/Rotate.c:33:6:Servo_IDLE	24	static
+../Core/ap/Controller/Rotate.c:49:6:Servo_LEFT	16	static
+../Core/ap/Controller/Rotate.c:62:6:Servo_RIGHT	16	static

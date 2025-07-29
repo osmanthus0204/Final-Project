@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul 22 14:50:26 2025
+# Process ID: 14476
+# Current directory: C:/Working/Harman/20250722_Project/20250722_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17552 C:\Working\Harman\20250722_Project\20250722_Project\250530_VGA_OV670.xpr
+# Log file: C:/Working/Harman/20250722_Project/20250722_Project/vivado.log
+# Journal file: C:/Working/Harman/20250722_Project/20250722_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Working/Harman/20250722_Project/20250722_Project/250530_VGA_OV670.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1

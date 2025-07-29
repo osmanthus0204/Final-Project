@@ -1,0 +1,2 @@
+../Core/driver/servomotor.c:10:6:Servo_Init	1
+../Core/driver/servomotor.c:14:6:Servo_SetAngle	1

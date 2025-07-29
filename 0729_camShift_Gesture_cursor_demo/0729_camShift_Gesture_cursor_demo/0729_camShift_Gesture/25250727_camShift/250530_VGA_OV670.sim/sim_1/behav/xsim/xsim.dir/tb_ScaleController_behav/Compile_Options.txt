@@ -1,0 +1,1 @@
+-wto "312bbbdadd794800abc980b83578472b" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "uvm" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "tb_ScaleController_behav" "xil_defaultlib.tb_ScaleController" "xil_defaultlib.glbl" -log "elaborate.log" 

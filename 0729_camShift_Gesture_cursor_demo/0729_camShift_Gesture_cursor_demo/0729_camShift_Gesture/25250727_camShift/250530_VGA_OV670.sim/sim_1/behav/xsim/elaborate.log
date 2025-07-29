@@ -1,0 +1,29 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 312bbbdadd794800abc980b83578472b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mean_scale_xy_behav xil_defaultlib.tb_mean_scale_xy xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 41 for port 'M00' [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_camshift.sv:49]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 41 for port 'M10' [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_camshift.sv:50]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 41 for port 'M01' [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_camshift.sv:51]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 41 for port 'M20' [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_camshift.sv:52]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 41 for port 'M02' [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_camshift.sv:53]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 41 for port 'M00' [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_camshift.sv:63]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 41 for port 'M10' [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_camshift.sv:64]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 41 for port 'M01' [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_camshift.sv:65]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 41 for port 'M20' [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_camshift.sv:66]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 41 for port 'M02' [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_camshift.sv:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MeanShift_ControlUnit
+Compiling module xil_defaultlib.MeanShift_Datapath
+Compiling module xil_defaultlib.MeanShiftCore
+Compiling module xil_defaultlib.sqrt_lut
+Compiling module xil_defaultlib.scale_Calc
+Compiling module xil_defaultlib.xy_min_max_calc
+Compiling module xil_defaultlib.tb_mean_scale_xy
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_mean_scale_xy_behav

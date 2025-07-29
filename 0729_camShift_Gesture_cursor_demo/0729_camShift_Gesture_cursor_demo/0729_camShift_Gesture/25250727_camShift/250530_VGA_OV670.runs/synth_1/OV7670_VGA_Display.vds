@@ -1,0 +1,1097 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 28 18:59:16 2025
+# Process ID: 19332
+# Current directory: C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.runs/synth_1
+# Command line: vivado.exe -log OV7670_VGA_Display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source OV7670_VGA_Display.tcl
+# Log file: C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.runs/synth_1/OV7670_VGA_Display.vds
+# Journal file: C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source OV7670_VGA_Display.tcl -notrace
+Command: synth_design -top OV7670_VGA_Display -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13212
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1104.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'OV7670_VGA_Display' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:3]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter WAIT bound to: 1 - type: integer 
+	Parameter FIRST bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'btn_debounce' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/btn_debounce.v:2]
+	Parameter DEBOUNCE_COUNT bound to: 1000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'btn_debounce' (1#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/btn_debounce.v:2]
+INFO: [Synth 8-6157] synthesizing module 'btn_rf' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/btn_rf.sv:1]
+	Parameter HIGH_THRESHOLD bound to: 100000 - type: integer 
+	Parameter LOW_THRESHOLD bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'btn_rf' (2#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/btn_rf.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SCCB_intf' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'I2C_clk_gen' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:298]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_clk_gen' (3#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:298]
+INFO: [Synth 8-6157] synthesizing module 'SCCB_controlUnit' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:45]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:99]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:199]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:223]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:247]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:274]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:182]
+INFO: [Synth 8-6155] done synthesizing module 'SCCB_controlUnit' (4#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:45]
+INFO: [Synth 8-6157] synthesizing module 'OV7670_config_rom' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:329]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_config_rom' (5#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:329]
+INFO: [Synth 8-6155] done synthesizing module 'SCCB_intf' (6#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'pixel_clk_gen' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_clk_gen' (7#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:49]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Controller' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'pixel_counter' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:73]
+	Parameter H_MAX bound to: 800 - type: integer 
+	Parameter V_MAX bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pixel_counter' (8#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:73]
+INFO: [Synth 8-6157] synthesizing module 'vga_decoder' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:108]
+	Parameter H_Visible_area bound to: 640 - type: integer 
+	Parameter H_Front_porch bound to: 16 - type: integer 
+	Parameter H_Sync_pulse bound to: 96 - type: integer 
+	Parameter H_Back_porch bound to: 48 - type: integer 
+	Parameter H_Whole_line bound to: 800 - type: integer 
+	Parameter V_Visible_area bound to: 480 - type: integer 
+	Parameter V_Front_porch bound to: 10 - type: integer 
+	Parameter V_Sync_pulse bound to: 2 - type: integer 
+	Parameter V_Back_porch bound to: 33 - type: integer 
+	Parameter V_Whole_frame bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_decoder' (9#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:108]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Controller' (10#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'OV7670_MemController' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_MemController.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_MemController' (11#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_MemController.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'HSV_Filter' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/HSV_Filter.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSV_Filter' (12#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/HSV_Filter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Histogram' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Histogram_Control_Unit' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:30]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter START bound to: 1 - type: integer 
+	Parameter SAVE bound to: 2 - type: integer 
+	Parameter FIND_MAX bound to: 3 - type: integer 
+	Parameter X_max bound to: 160 - type: integer 
+	Parameter X_min bound to: 80 - type: integer 
+	Parameter Y_max bound to: 120 - type: integer 
+	Parameter Y_min bound to: 60 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Histogram_Control_Unit' (13#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:30]
+INFO: [Synth 8-6157] synthesizing module 'Histrogram_ram' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:138]
+INFO: [Synth 8-6155] done synthesizing module 'Histrogram_ram' (14#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:138]
+INFO: [Synth 8-6155] done synthesizing module 'Histogram' (15#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'BackProjection' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'SimilarityCalc' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'SimilarityCalc' (16#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:37]
+INFO: [Synth 8-6157] synthesizing module 'BPBuffer' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'BPBuffer' (17#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'BackProjection' (18#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'MeanShiftCore' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'MeanShift_ControlUnit' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv:41]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv:131]
+INFO: [Synth 8-6155] done synthesizing module 'MeanShift_ControlUnit' (19#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv:41]
+INFO: [Synth 8-6157] synthesizing module 'MeanShift_Datapath' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv:183]
+INFO: [Synth 8-6155] done synthesizing module 'MeanShift_Datapath' (20#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv:183]
+INFO: [Synth 8-6155] done synthesizing module 'MeanShiftCore' (21#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'scale_Calc' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv:97]
+INFO: [Synth 8-6157] synthesizing module 'sqrt_lut' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv:167]
+INFO: [Synth 8-3876] $readmem data file 'sqrt_table.mem' is read successfully [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv:179]
+INFO: [Synth 8-6155] done synthesizing module 'sqrt_lut' (22#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv:167]
+INFO: [Synth 8-6155] done synthesizing module 'scale_Calc' (23#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'xy_min_max_calc' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:775]
+INFO: [Synth 8-6155] done synthesizing module 'xy_min_max_calc' (24#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:775]
+INFO: [Synth 8-6157] synthesizing module 'ISP_for_pen' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'cursor_detector' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:93]
+	Parameter margin bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cursor_detector' (25#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:93]
+INFO: [Synth 8-6157] synthesizing module 'erosion' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:108]
+INFO: [Synth 8-6155] done synthesizing module 'erosion' (26#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:108]
+INFO: [Synth 8-6157] synthesizing module 'dense_pixel' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:162]
+	Parameter heart bound to: 400'b0000000010101010000000001010101000000000000010100001000110101010000100011010000010100001100100010001000100010001000110101010000110010001000100010001000100011010101000010001000100010001000100010001101000001010000100010001000100010001101000000000000010100001000100010001101000000000000000000000101000010001101000000000000000000000000000001010101000000000000000000000000000000000000000000000000000000000 
+	Parameter glasses bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000010101010101010101010101010101010101010101010100110101010101010101001101010101010000010101001101000000000101010011010101000000000101010100000000000001010101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter glitter bound to: 400'b0000000000000000101000000000000000000000000000000000101000111010000000000000000000000000000010100011101000000000000000000000101010100011001110011010101000000000101000110011001100110011100100111010000000001010101000110011001110101010000000000000000010100011001100111010000000000000000000000000101000111010000000000000000000000000000010100011101000000000000000000000000000000000101000000000000000000000 
+	Parameter smile bound to: 400'b0000000010101010101010101010101000000000000010100011001100110011001100111010000010100011001100110011001100110011001110101010001100111010001100111010001100111010101000110011001100110011001100110011101010100011101000110011001100111010001110101010001100111010101010101010001100111010101000110011001100110011001100110011101000001010001100110011001100110011101000000000000010101010101010101010101000000000 
+	Parameter h bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000000000000010100000000000000000000010100000000000001010000000000000000000001010101010101010101000000000000000000000101000000000000010100000000000000000000010100000000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter a bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000001010000010100000000000000000000000001010101010101010101000000000000000000000101000000000000010100000000000000000000010100000000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter r bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010101010100000000000000000000000001010000000001010000000000000000000000000000010101010101000000000000000000000000000001010000010100000000000000000000000001010000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter m bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000000000000010100000000000000000000010101010000010101010000000000000000000001010000010100000101000000000000000000000101000000000000010100000000000000000000010100000000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter n bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000000000000010100000000000000000000010100000000010101010000000000000000000001010000010100000101000000000000000000000101000001010000010100000000000000000000010101010000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_red bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_orange bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_yellow bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_green bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_blue bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_purple bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter eraser bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000101010100000000000000000000000000000101010011001101000000000000000000000101001101010100110011010000000000000101001100110011010101001101000000000101001100110011001100110101000000000000010100110011001100110101000000000000000000000101001100110101000000000000000000000000000001010101000000000000000000000000000000000000000000000000000000000 
+	Parameter no_color bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter alpha bound to: 4'b0100 
+INFO: [Synth 8-226] default block is never used [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:2229]
+INFO: [Synth 8-6155] done synthesizing module 'dense_pixel' (27#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:162]
+INFO: [Synth 8-6155] done synthesizing module 'ISP_for_pen' (28#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:3]
+WARNING: [Synth 8-689] width (10) of port connection 'smoothed_col' does not match port width (8) of module 'ISP_for_pen' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:451]
+WARNING: [Synth 8-689] width (10) of port connection 'smoothed_row' does not match port width (8) of module 'ISP_for_pen' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:452]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer_320x240' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/frame_buffer_320x240.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer_320x240' (29#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/frame_buffer_320x240.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_div_100M_to_10Hz' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:745]
+	Parameter COUNT_MAX bound to: 4999999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div_100M_to_10Hz' (30#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:745]
+INFO: [Synth 8-6157] synthesizing module 'dis_x_y' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:278]
+INFO: [Synth 8-6155] done synthesizing module 'dis_x_y' (31#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:278]
+WARNING: [Synth 8-689] width (10) of port connection 'smoothed_col' does not match port width (8) of module 'dis_x_y' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:484]
+WARNING: [Synth 8-689] width (10) of port connection 'smoothed_row' does not match port width (8) of module 'dis_x_y' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:485]
+WARNING: [Synth 8-689] width (10) of port connection 'smoothed_col' does not match port width (8) of module 'dis_x_y' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:493]
+WARNING: [Synth 8-689] width (10) of port connection 'smoothed_row' does not match port width (8) of module 'dis_x_y' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:494]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer_160x120_cursor' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/frame_buffer.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer_160x120_cursor' (32#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/frame_buffer.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'mux3x1' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:677]
+INFO: [Synth 8-226] default block is never used [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:694]
+INFO: [Synth 8-6155] done synthesizing module 'mux3x1' (33#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:677]
+INFO: [Synth 8-6157] synthesizing module 'QVGA_MemController' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/QVGA_MemController.sv:3]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter START_RIGHT bound to: 1 - type: integer 
+	Parameter START_LEFT bound to: 2 - type: integer 
+	Parameter default_rgb bound to: 12'b111111111111 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/QVGA_MemController.sv:136]
+INFO: [Synth 8-6155] done synthesizing module 'QVGA_MemController' (34#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/QVGA_MemController.sv:3]
+WARNING: [Synth 8-689] width (10) of port connection 'smoothed_col' does not match port width (8) of module 'QVGA_MemController' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:559]
+WARNING: [Synth 8-689] width (10) of port connection 'smoothed_row' does not match port width (8) of module 'QVGA_MemController' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:560]
+INFO: [Synth 8-6157] synthesizing module 'fndController' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_div_1khz' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div_1khz' (35#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:92]
+INFO: [Synth 8-6157] synthesizing module 'counter_2bit' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'counter_2bit' (36#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:115]
+INFO: [Synth 8-6157] synthesizing module 'decoder_2x4' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:132]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_2x4' (37#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:132]
+INFO: [Synth 8-6157] synthesizing module 'digitSplitter' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'digitSplitter' (38#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:147]
+INFO: [Synth 8-6157] synthesizing module 'mux_4x1' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4x1' (39#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:160]
+INFO: [Synth 8-6157] synthesizing module 'BCDtoSEG_decoder' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:179]
+INFO: [Synth 8-226] default block is never used [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'BCDtoSEG_decoder' (40#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:179]
+INFO: [Synth 8-6157] synthesizing module 'mux_4x1_1bit' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4x1_1bit' (41#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'fndController' (42#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gesture' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:3]
+	Parameter DIR_NONE bound to: 3'b000 
+	Parameter DIR_RIGHT bound to: 3'b001 
+	Parameter DIR_DOWN bound to: 3'b010 
+	Parameter DIR_LEFT bound to: 3'b011 
+	Parameter DIR_UP bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:145]
+INFO: [Synth 8-6155] done synthesizing module 'gesture' (43#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'gesture_to_number' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:244]
+	Parameter DIR_NONE bound to: 3'b000 
+	Parameter DIR_RIGHT bound to: 3'b001 
+	Parameter DIR_DOWN bound to: 3'b010 
+	Parameter DIR_LEFT bound to: 3'b011 
+	Parameter DIR_UP bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'gesture_to_number' (44#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:244]
+INFO: [Synth 8-6157] synthesizing module 'UART_TX' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:23]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter SEND bound to: 1 - type: integer 
+	Parameter START bound to: 2 - type: integer 
+	Parameter D bound to: 3 - type: integer 
+	Parameter STOP bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'UART_TX' (45#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'baud_tick_genp' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:156]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter BAUD_COUNT bound to: 651 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'baud_tick_genp' (46#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:156]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_VGA_Display' (47#1) [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1280.543 ; gain = 176.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1280.543 ; gain = 176.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1280.543 ; gain = 176.109
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.154 . Memory (MB): peak = 1280.543 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/constrs_1/imports/250530_VGA_OV670/Basys-3-Master.xdc]
+Finished Parsing XDC File [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/constrs_1/imports/250530_VGA_OV670/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/constrs_1/imports/250530_VGA_OV670/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/OV7670_VGA_Display_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/OV7670_VGA_Display_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1340.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1340.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 1340.742 ; gain = 236.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 1340.742 ; gain = 236.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 1340.742 ; gain = 236.309
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'scl_state_reg' in module 'SCCB_controlUnit'
+INFO: [Synth 8-802] inferred FSM for state register 'sda_state_reg' in module 'SCCB_controlUnit'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Histogram_Control_Unit'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'MeanShift_ControlUnit'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'QVGA_MemController'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'gesture'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                SDA_IDLE |                           000001 | 00000000000000000000000000000000
+               SDA_START |                           000010 | 00000000000000000000000000000001
+               DEVICE_ID |                           000100 | 00000000000000000000000000000010
+             ADDRESS_REG |                           001000 | 00000000000000000000000000000011
+                DATA_REG |                           010000 | 00000000000000000000000000000100
+                SDA_STOP |                           100000 | 00000000000000000000000000000101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sda_state_reg' using encoding 'one-hot' in module 'SCCB_controlUnit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                SCL_IDLE |                              000 | 00000000000000000000000000000000
+               SCL_START |                              001 | 00000000000000000000000000000001
+                 SCL_H2L |                              010 | 00000000000000000000000000000010
+                 SCL_L2L |                              011 | 00000000000000000000000000000011
+                 SCL_L2H |                              100 | 00000000000000000000000000000100
+                SCL_STOP |                              101 | 00000000000000000000000000000110
+                 SCL_H2H |                              110 | 00000000000000000000000000000101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'scl_state_reg' using encoding 'sequential' in module 'SCCB_controlUnit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                   START |                               01 |                               01
+                    SAVE |                               10 |                               10
+                FIND_MAX |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Histogram_Control_Unit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                    WAIT |                              001 |                              001
+                    INIT |                              010 |                              010
+                    SCAN |                              011 |                              011
+                    DONE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'MeanShift_ControlUnit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+             START_RIGHT |                               01 |                               01
+              START_LEFT |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'QVGA_MemController'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 | 00000000000000000000000000000000
+                   START |                             0001 | 00000000000000000000000000000001
+                   LINE1 |                             0010 | 00000000000000000000000000000010
+                   SLOW1 |                             0011 | 00000000000000000000000000001001
+                   WAIT1 |                             0100 | 00000000000000000000000000000011
+                   LINE2 |                             0101 | 00000000000000000000000000000100
+                   SLOW2 |                             0110 | 00000000000000000000000000001010
+                   WAIT2 |                             0111 | 00000000000000000000000000000101
+                   LINE3 |                             1000 | 00000000000000000000000000000110
+                LINE_END |                             1001 | 00000000000000000000000000000111
+                    STOP |                             1010 | 00000000000000000000000000001000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'gesture'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0000
+                   START |                             0010 |                             0010
+                       D |                             0100 |                             0011
+                    STOP |                             1000 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'UART_TX'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:35 . Memory (MB): peak = 1340.742 ; gain = 236.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 7     
+	   2 Input   23 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
+	   3 Input   17 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 15    
+	   3 Input   10 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 5     
+	   3 Input    9 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 8     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   3 Input    6 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               41 Bit    Registers := 4     
+	               32 Bit    Registers := 2     
+	               25 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               17 Bit    Registers := 3     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 256   
+	               12 Bit    Registers := 4     
+	               10 Bit    Registers := 20    
+	                9 Bit    Registers := 15    
+	                8 Bit    Registers := 16    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1309  
++---Multipliers : 
+	               6x32  Multipliers := 3     
++---RAMs : 
+	             900K Bit	(76800 X 12 bit)          RAMs := 3     
++---ROMs : 
+	                    ROMs := 3     
++---Muxes : 
+	   2 Input   41 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 3     
+	   7 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 1     
+	   4 Input   17 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   4 Input   14 Bit        Muxes := 1     
+	   4 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 20    
+	   5 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 7     
+	   2 Input    8 Bit        Muxes := 15    
+	   4 Input    8 Bit        Muxes := 3     
+	  11 Input    8 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 2     
+	  15 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   6 Input    6 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 17    
+	   4 Input    4 Bit        Muxes := 5     
+	 100 Input    4 Bit        Muxes := 6     
+	   3 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	  11 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 7     
+	   5 Input    3 Bit        Muxes := 2     
+	 100 Input    3 Bit        Muxes := 3     
+	 101 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	  11 Input    3 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	 100 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 618   
+	   7 Input    1 Bit        Muxes := 10    
+	   6 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 276   
+	   5 Input    1 Bit        Muxes := 13    
+	   3 Input    1 Bit        Muxes := 4     
+	 100 Input    1 Bit        Muxes := 1     
+	  11 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'Y_sqrt/done_reg' into 'X_sqrt/done_reg' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv:185]
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP p_1_out, operation Mode is: C-A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator x_mul is absorbed into DSP p_1_out.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP p_1_out, operation Mode is: C-A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator y_mul is absorbed into DSP p_1_out.
+INFO: [Synth 8-3886] merging instance 'state_reg[31]' (FDCE) to 'state_reg[30]'
+INFO: [Synth 8-3886] merging instance 'state_reg[30]' (FDCE) to 'state_reg[29]'
+INFO: [Synth 8-3886] merging instance 'state_reg[29]' (FDCE) to 'state_reg[28]'
+INFO: [Synth 8-3886] merging instance 'state_reg[28]' (FDCE) to 'state_reg[27]'
+INFO: [Synth 8-3886] merging instance 'state_reg[27]' (FDCE) to 'state_reg[26]'
+INFO: [Synth 8-3886] merging instance 'state_reg[26]' (FDCE) to 'state_reg[25]'
+INFO: [Synth 8-3886] merging instance 'state_reg[25]' (FDCE) to 'state_reg[24]'
+INFO: [Synth 8-3886] merging instance 'state_reg[24]' (FDCE) to 'state_reg[23]'
+INFO: [Synth 8-3886] merging instance 'state_reg[23]' (FDCE) to 'state_reg[22]'
+INFO: [Synth 8-3886] merging instance 'state_reg[22]' (FDCE) to 'state_reg[21]'
+INFO: [Synth 8-3886] merging instance 'state_reg[21]' (FDCE) to 'state_reg[20]'
+INFO: [Synth 8-3886] merging instance 'state_reg[20]' (FDCE) to 'state_reg[19]'
+INFO: [Synth 8-3886] merging instance 'state_reg[19]' (FDCE) to 'state_reg[18]'
+INFO: [Synth 8-3886] merging instance 'state_reg[18]' (FDCE) to 'state_reg[17]'
+INFO: [Synth 8-3886] merging instance 'state_reg[17]' (FDCE) to 'state_reg[16]'
+INFO: [Synth 8-3886] merging instance 'state_reg[16]' (FDCE) to 'state_reg[15]'
+INFO: [Synth 8-3886] merging instance 'state_reg[15]' (FDCE) to 'state_reg[14]'
+INFO: [Synth 8-3886] merging instance 'state_reg[14]' (FDCE) to 'state_reg[13]'
+INFO: [Synth 8-3886] merging instance 'state_reg[13]' (FDCE) to 'state_reg[12]'
+INFO: [Synth 8-3886] merging instance 'state_reg[12]' (FDCE) to 'state_reg[11]'
+INFO: [Synth 8-3886] merging instance 'state_reg[11]' (FDCE) to 'state_reg[10]'
+INFO: [Synth 8-3886] merging instance 'state_reg[10]' (FDCE) to 'state_reg[9]'
+INFO: [Synth 8-3886] merging instance 'state_reg[9]' (FDCE) to 'state_reg[8]'
+INFO: [Synth 8-3886] merging instance 'state_reg[8]' (FDCE) to 'state_reg[7]'
+INFO: [Synth 8-3886] merging instance 'state_reg[7]' (FDCE) to 'state_reg[6]'
+INFO: [Synth 8-3886] merging instance 'state_reg[6]' (FDCE) to 'state_reg[5]'
+INFO: [Synth 8-3886] merging instance 'state_reg[5]' (FDCE) to 'state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'state_reg[4]' (FDCE) to 'state_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\state_reg[3] )
+INFO: [Synth 8-3886] merging instance 'h_reg_reg[8]' (FDCE) to 'h_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'w_reg_reg[8]' (FDCE) to 'w_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'height_reg[0]' (FDCE) to 'width_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\width_reg[0] )
+INFO: [Synth 8-3886] merging instance 'h_reg_reg[6]' (FDCE) to 'h_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'h_reg_reg[7]' (FDCE) to 'h_reg_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_reg_reg[9] )
+INFO: [Synth 8-4471] merging register 'smoothed_col_reg[7:0]' into 'smoothed_col_reg[7:0]' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:2176]
+INFO: [Synth 8-4471] merging register 'smoothed_row_reg[7:0]' into 'smoothed_row_reg[7:0]' [C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:2177]
+WARNING: [Synth 8-7129] Port h_counter_o[0] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[16] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[15] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[14] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[13] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[12] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[11] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[10] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[9] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[8] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[7] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[6] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[5] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[4] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[3] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[2] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[1] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wAddr[0] in module frame_buffer_320x240 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port h_counter[1] in module dense_pixel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port h_counter[0] in module dense_pixel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_counter[0] in module dense_pixel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cursor_color[2] in module dense_pixel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cursor_color[1] in module dense_pixel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cursor_color[0] in module dense_pixel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wData[11] in module ISP_for_pen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wData[6] in module ISP_for_pen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wData[5] in module ISP_for_pen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wData[0] in module ISP_for_pen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port h_counter_o[1] in module frame_buffer_160x120_cursor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port h_counter_o[0] in module frame_buffer_160x120_cursor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port v_counter_o[0] in module frame_buffer_160x120_cursor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rAddr[16] in module frame_buffer_160x120_cursor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rAddr[15] in module frame_buffer_160x120_cursor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DE in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_col[7] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_col[6] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_col[5] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_col[4] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_col[3] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_col[2] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_col[1] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_col[0] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_row[7] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_row[6] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_row[5] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_row[4] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_row[3] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_row[2] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_row[1] in module QVGA_MemController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port smoothed_row[0] in module QVGA_MemController is either unconnected or has no load
+INFO: [Synth 8-3886] merging instance 'U_QVGA_MemController/rAddr_160x120_reg[3]' (FD) to 'U_QVGA_MemController/rAddr_320x240_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U_QVGA_MemController/rAddr_160x120_reg[2]' (FD) to 'U_QVGA_MemController/rAddr_320x240_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U_QVGA_MemController/rAddr_160x120_reg[1]' (FD) to 'U_QVGA_MemController/rAddr_320x240_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U_QVGA_MemController/rAddr_160x120_reg[0]' (FD) to 'U_QVGA_MemController/rAddr_320x240_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_ISP_PEN/\cursor_size_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_ISP_PEN/\cursor_size_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_ISP_PEN/\cursor_size_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U_ISP_PEN/\cursor_size_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_ISP_PEN/U_DENSE_PIXEL/\max_row_reg[7] )
+INFO: [Synth 8-3886] merging instance 'U_SCCB_intf/U_SCCB_controlUnit/bitCount_reg[4]' (FDRE) to 'U_SCCB_intf/U_SCCB_controlUnit/bitCount_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_SCCB_intf/\U_SCCB_controlUnit/bitCount_reg[5] )
+INFO: [Synth 8-3886] merging instance 'U_QVGA_MemController/dirData_reg_reg[0]' (FDR) to 'U_QVGA_MemController/dirData_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U_QVGA_MemController/dirData_reg_reg[3]' (FDR) to 'U_QVGA_MemController/dirData_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U_QVGA_MemController/dirData_reg_reg[4]' (FDR) to 'U_QVGA_MemController/dirData_reg_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_QVGA_MemController/\dirData_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_QVGA_MemController/\dirData_reg_reg[7] )
+INFO: [Synth 8-3886] merging instance 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[9]' (FDE) to 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[2]' (FDE) to 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[1]'
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_0_63_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_64_127_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_128_191_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_192_255_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_256_319_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_320_383_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_384_447_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_448_511_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_512_575_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_576_639_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_640_703_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_704_767_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_768_831_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_832_895_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_896_959_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_960_1023_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1024_1087_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1088_1151_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1152_1215_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1216_1279_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1280_1343_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1344_1407_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1408_1471_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1472_1535_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1536_1599_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1600_1663_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1664_1727_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1728_1791_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1792_1855_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1856_1919_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1920_1983_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_1984_2047_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2048_2111_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2112_2175_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2176_2239_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2240_2303_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2304_2367_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2368_2431_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2432_2495_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2496_2559_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2560_2623_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2624_2687_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2688_2751_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2752_2815_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2816_2879_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2880_2943_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_2944_3007_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3008_3071_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3072_3135_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3136_3199_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3200_3263_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3264_3327_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3328_3391_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3392_3455_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3456_3519_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3520_3583_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3584_3647_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3648_3711_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3712_3775_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3776_3839_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3840_3903_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3904_3967_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_3968_4031_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4032_4095_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4096_4159_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4160_4223_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4224_4287_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4288_4351_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4352_4415_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4416_4479_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4480_4543_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4544_4607_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4608_4671_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4672_4735_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4736_4799_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4800_4863_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4864_4927_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4928_4991_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_4992_5055_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5056_5119_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5120_5183_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5184_5247_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5248_5311_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5312_5375_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5376_5439_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5440_5503_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5504_5567_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5568_5631_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5632_5695_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5696_5759_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5760_5823_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5824_5887_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5888_5951_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_5952_6015_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_6016_6079_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_6080_6143_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_6144_6207_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_6208_6271_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_6272_6335_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Synth 8-7067] Removed DRAM instance U_FRAME_BUFFER_160x120_cursor/i_0/mem_reg_6336_6399_3_3 from module frame_buffer_160x120_cursor due to constant propagation
+INFO: [Common 17-14] Message 'Synth 8-7067' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7067' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[10]' (FDE) to 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[11]' (FDE) to 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[8]' (FDE) to 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[7]' (FDE) to 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[6]' (FDE) to 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[5]' (FDE) to 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[3]' (FDE) to 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[1]' (FDE) to 'U_FRAME_BUFFER_160x120_cursor/rData_rgb_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_FRAME_BUFFER_160x120_cursor/\rData_rgb_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__0) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__1) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__2) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__3) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__4) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__5) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__6) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__7) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__8) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__9) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__10) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__11) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__12) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__13) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__14) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__15) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__16) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__17) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__18) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__19) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__20) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__21) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__22) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__23) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__24) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__25) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__26) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__27) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__28) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__29) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__30) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__31) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__32) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__33) is unused and will be removed from module frame_buffer_320x240.
+WARNING: [Synth 8-3332] Sequential element (mem_reg_mux_sel__34) is unused and will be removed from module frame_buffer_320x240.
+DSP Report: Generating DSP U_BackProjection2/U_SimilarityCalc/scaled1, operation Mode is: A*(B:0xff).
+DSP Report: operator U_BackProjection2/U_SimilarityCalc/scaled1 is absorbed into DSP U_BackProjection2/U_SimilarityCalc/scaled1.
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__23' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__24' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__0' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__25' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__1' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__26' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__2' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__27' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__3' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__28' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__4' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__29' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__5' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__30' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__6' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__31' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__7' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__32' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__8' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__33' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__9' (FD) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__23' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__24' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__0' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__25' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__1' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__26' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__2' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__27' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__3' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__28' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__4' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__29' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__5' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__30' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__6' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__31' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__7' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__32' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__8' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__10'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__33' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__34'
+INFO: [Synth 8-3886] merging instance 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__9' (FD) to 'i_0/U_BackProjection2/U_BPBuffer/mem_reg_mux_sel__10'
+DSP Report: Generating DSP x_sum_reg1, operation Mode is: C+A*B.
+DSP Report: operator x_sum_reg1 is absorbed into DSP x_sum_reg1.
+DSP Report: operator x_sum_reg2 is absorbed into DSP x_sum_reg1.
+DSP Report: Generating DSP y_sum_reg1, operation Mode is: C+A*B.
+DSP Report: operator y_sum_reg1 is absorbed into DSP y_sum_reg1.
+DSP Report: operator y_sum_reg2 is absorbed into DSP y_sum_reg1.
+DSP Report: Generating DSP x2_sum_reg3, operation Mode is: A*B.
+DSP Report: operator x2_sum_reg3 is absorbed into DSP x2_sum_reg3.
+DSP Report: Generating DSP x2_sum_reg1, operation Mode is: C+A*B.
+DSP Report: operator x2_sum_reg1 is absorbed into DSP x2_sum_reg1.
+DSP Report: operator x2_sum_reg2 is absorbed into DSP x2_sum_reg1.
+DSP Report: Generating DSP y2_sum_reg3, operation Mode is: A*B.
+DSP Report: operator y2_sum_reg3 is absorbed into DSP y2_sum_reg3.
+DSP Report: Generating DSP y2_sum_reg1, operation Mode is: C+A*B.
+DSP Report: operator y2_sum_reg1 is absorbed into DSP y2_sum_reg1.
+DSP Report: operator y2_sum_reg2 is absorbed into DSP y2_sum_reg1.
+INFO: [Synth 8-5587] ROM size for "U_gesture_to_number/gesture_number" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-3917] design OV7670_VGA_Display__GCB2 has port gesture_number[7] driven by constant 0
+WARNING: [Synth 8-3917] design OV7670_VGA_Display__GCB2 has port gesture_number[6] driven by constant 1
+WARNING: [Synth 8-3917] design OV7670_VGA_Display__GCB2 has port gesture_number[5] driven by constant 1
+WARNING: [Synth 8-3917] design OV7670_VGA_Display__GCB2 has port gesture_number[4] driven by constant 0
+WARNING: [Synth 8-7129] Port x_diff[9] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_diff[8] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_diff[7] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_diff[6] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_diff[5] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_diff[4] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_diff[3] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_diff[2] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_diff[1] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_diff[0] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_diff[9] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_diff[8] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_diff[7] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_diff[6] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_diff[5] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_diff[4] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_diff[3] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_diff[2] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_diff[1] in module MeanShift_Datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_diff[0] in module MeanShift_Datapath is either unconnected or has no load
+INFO: [Synth 8-3886] merging instance 'xy_min_max_calc/y_max_reg[0]' (FDCE) to 'xy_min_max_calc/y_min_reg[0]'
+INFO: [Synth 8-3886] merging instance 'xy_min_max_calc/y_max_reg[1]' (FDCE) to 'xy_min_max_calc/y_min_reg[1]'
+INFO: [Synth 8-3886] merging instance 'xy_min_max_calc/x_max_reg[0]' (FDCE) to 'xy_min_max_calc/x_min_reg[0]'
+INFO: [Synth 8-3886] merging instance 'xy_min_max_calc/x_max_reg[1]' (FDCE) to 'xy_min_max_calc/x_min_reg[1]'
+INFO: [Synth 8-3886] merging instance 'xy_min_max_calc/x_max_reg[2]' (FDCE) to 'xy_min_max_calc/x_min_reg[2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\xy_min_max_calc/y_min_reg[9] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:01:53 . Memory (MB): peak = 1340.742 ; gain = 236.309
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-7048] Resources of type BRAM have been overutilized even after performing resource management. Used = 144, Available = 100. 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++-------------------+--------------------------+---------------+----------------+
+|Module Name        | RTL Object               | Depth x Width | Implemented As | 
++-------------------+--------------------------+---------------+----------------+
+|OV7670_VGA_Display | p_0_out                  | 65536x9       | LUT            | 
+|OV7670_VGA_Display | p_0_out                  | 65536x9       | LUT            | 
+|SCCB_intf          | U_OV7670_config_rom/dout | 256x16        | LUT            | 
++-------------------+--------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++-------------------------+--------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name              | RTL Object                           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------+--------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|OV7670_VGA_Display__GCB1 | U_BackProjection2/U_BPBuffer/mem_reg | 75 K x 12(READ_FIRST)  | W |   | 75 K x 12(WRITE_FIRST) |   | R | Port A and B     | 0      | 36     | 
+|OV7670_VGA_Display__GCB1 | U_BackProjection/U_BPBuffer/mem_reg  | 75 K x 12(READ_FIRST)  | W |   | 75 K x 12(WRITE_FIRST) |   | R | Port A and B     | 0      | 36     | 
++-------------------------+--------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------------------------+--------------------------------------+-----------+----------------------+------------------------------+
+|Module Name                   | RTL Object                           | Inference | Size (Depth x Width) | Primitives                   | 
++------------------------------+--------------------------------------+-----------+----------------------+------------------------------+
+|U_FRAME_BUFFER_160x120_cursor | mem_reg                              | Implied   | 32 K x 4             | RAM64X1D x 300	RAM64M x 300	 | 
+|OV7670_VGA_Display__GCB1      | U_Histogram/U_Histrogram_ram/mem_reg | Implied   | 256 x 13             | RAM64X1D x 4	RAM64M x 16	    | 
++------------------------------+--------------------------------------+-----------+----------------------+------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|scale_Calc         | A*B         | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|scale_Calc         | C-A*B       | 10     | 10     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|scale_Calc         | A*B         | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|scale_Calc         | C-A*B       | 10     | 10     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|SimilarityCalc     | A*(B:0xff)  | 13     | 8      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MeanShift_Datapath | C+A*B       | 12     | 10     | 41     | -      | 41     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MeanShift_Datapath | C+A*B       | 12     | 10     | 41     | -      | 41     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MeanShift_Datapath | A*B         | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MeanShift_Datapath | C+A*B       | 20     | 12     | 41     | -      | 41     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|MeanShift_Datapath | A*B         | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MeanShift_Datapath | C+A*B       | 20     | 12     | 41     | -      | 41     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:02:45 . Memory (MB): peak = 1446.535 ; gain = 342.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:02:50 . Memory (MB): peak = 1463.844 ; gain = 359.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++-------------------------+--------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name              | RTL Object                           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------+--------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|OV7670_VGA_Display__GCB1 | U_BackProjection2/U_BPBuffer/mem_reg | 75 K x 12(READ_FIRST)  | W |   | 75 K x 12(WRITE_FIRST) |   | R | Port A and B     | 0      | 36     | 
+|OV7670_VGA_Display__GCB1 | U_BackProjection/U_BPBuffer/mem_reg  | 75 K x 12(READ_FIRST)  | W |   | 75 K x 12(WRITE_FIRST) |   | R | Port A and B     | 0      | 36     | 
++-------------------------+--------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++------------------------------+--------------------------------------+-----------+----------------------+------------------------------+
+|Module Name                   | RTL Object                           | Inference | Size (Depth x Width) | Primitives                   | 
++------------------------------+--------------------------------------+-----------+----------------------+------------------------------+
+|U_FRAME_BUFFER_160x120_cursor | mem_reg                              | Implied   | 32 K x 4             | RAM64X1D x 300	RAM64M x 300	 | 
+|OV7670_VGA_Display__GCB1      | U_Histogram/U_Histrogram_ram/mem_reg | Implied   | 256 x 13             | RAM64X1D x 4	RAM64M x 16	    | 
++------------------------------+--------------------------------------+-----------+----------------------+------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_4' (RAMB36E1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_8' (RAMB36E1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_4' (RAMB36E1_1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_8' (RAMB36E1_1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_5' (RAMB36E1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_1'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_9' (RAMB36E1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_1'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_5' (RAMB36E1_1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_1'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_9' (RAMB36E1_1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_1'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_6' (RAMB36E1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_2'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_10' (RAMB36E1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_2'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_6' (RAMB36E1_1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_2'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_10' (RAMB36E1_1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_2'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_7' (RAMB36E1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_3'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_11' (RAMB36E1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_0_3'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_7' (RAMB36E1_1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_3'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_11' (RAMB36E1_1) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_3'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_0__0' (RAMB36E1_2) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_4__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_1__0' (RAMB36E1_2) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_5__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_2__0' (RAMB36E1_2) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_6__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_3__0' (RAMB36E1_2) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_7__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_4__0' (RAMB36E1_2) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_8__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_5__0' (RAMB36E1_2) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_9__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_6__0' (RAMB36E1_2) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_10__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_7__0' (RAMB36E1_2) to 'i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_11__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_4' (RAMB36E1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_8' (RAMB36E1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_4' (RAMB36E1_1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_8' (RAMB36E1_1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_5' (RAMB36E1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_1'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_9' (RAMB36E1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_1'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_5' (RAMB36E1_1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_1'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_9' (RAMB36E1_1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_1'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_6' (RAMB36E1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_2'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_10' (RAMB36E1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_2'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_6' (RAMB36E1_1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_2'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_10' (RAMB36E1_1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_2'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_7' (RAMB36E1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_3'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_11' (RAMB36E1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_0_3'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_7' (RAMB36E1_1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_3'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_11' (RAMB36E1_1) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_3'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_0__0' (RAMB36E1_2) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_4__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_1__0' (RAMB36E1_2) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_5__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_2__0' (RAMB36E1_2) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_6__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_3__0' (RAMB36E1_2) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_7__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_4__0' (RAMB36E1_2) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_8__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_5__0' (RAMB36E1_2) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_9__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_6__0' (RAMB36E1_2) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_10__0'
+INFO: [Synth 8-223] decloning instance 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_7__0' (RAMB36E1_2) to 'i_1/U_BackProjection/U_BPBuffer/mem_reg_1_11__0'
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_8__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_9__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_10__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection2/U_BPBuffer/mem_reg_1_11__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection/U_BPBuffer/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection/U_BPBuffer/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection/U_BPBuffer/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection/U_BPBuffer/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection/U_BPBuffer/mem_reg_1_8__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection/U_BPBuffer/mem_reg_1_9__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection/U_BPBuffer/mem_reg_1_10__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/U_BackProjection/U_BPBuffer/mem_reg_1_11__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:03:06 . Memory (MB): peak = 1463.844 ; gain = 359.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection2/U_BPBuffer/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection2/U_BPBuffer/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection2/U_BPBuffer/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection2/U_BPBuffer/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection2/U_BPBuffer/mem_reg_1_8__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection2/U_BPBuffer/mem_reg_1_9__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection2/U_BPBuffer/mem_reg_1_10__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection2/U_BPBuffer/mem_reg_1_11__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection/U_BPBuffer/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection/U_BPBuffer/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection/U_BPBuffer/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection/U_BPBuffer/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection/U_BPBuffer/mem_reg_1_8__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection/U_BPBuffer/mem_reg_1_9__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection/U_BPBuffer/mem_reg_1_10__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U_BackProjection/U_BPBuffer/mem_reg_1_11__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:03:13 . Memory (MB): peak = 1463.844 ; gain = 359.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:03:13 . Memory (MB): peak = 1463.844 ; gain = 359.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:03:15 . Memory (MB): peak = 1463.844 ; gain = 359.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:03:15 . Memory (MB): peak = 1463.844 ; gain = 359.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:03:15 . Memory (MB): peak = 1463.844 ; gain = 359.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:03:15 . Memory (MB): peak = 1463.844 ; gain = 359.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |CARRY4   |  1285|
+|3     |DSP48E1  |     3|
+|5     |LUT1     |   240|
+|6     |LUT2     |   919|
+|7     |LUT3     |  4510|
+|8     |LUT4     |   588|
+|9     |LUT5     |   649|
+|10    |LUT6     |  4246|
+|11    |MUXF7    |  1377|
+|12    |MUXF8    |   644|
+|13    |RAM64M   |   316|
+|14    |RAM64X1D |     4|
+|15    |RAMB36E1 |    24|
+|18    |FDCE     |   932|
+|19    |FDPE     |    14|
+|20    |FDRE     |  4438|
+|21    |FDSE     |     7|
+|22    |IBUF     |    15|
+|23    |OBUF     |    37|
+|24    |OBUFT    |     3|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:03:15 . Memory (MB): peak = 1463.844 ; gain = 359.410
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 110 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:03:12 . Memory (MB): peak = 1463.844 ; gain = 299.211
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:03:16 . Memory (MB): peak = 1463.844 ; gain = 359.410
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.309 . Memory (MB): peak = 1472.895 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3653 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1481.254 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 320 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 316 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+438 Infos, 118 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:03:27 . Memory (MB): peak = 1481.254 ; gain = 376.820
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.runs/synth_1/OV7670_VGA_Display.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file OV7670_VGA_Display_utilization_synth.rpt -pb OV7670_VGA_Display_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 28 19:02:49 2025...

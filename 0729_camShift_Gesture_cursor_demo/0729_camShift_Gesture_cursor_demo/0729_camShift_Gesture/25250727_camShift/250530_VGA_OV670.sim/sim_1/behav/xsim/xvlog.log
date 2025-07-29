@@ -1,0 +1,41 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/uart_cu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_cu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/emoji_selector.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module emoji_selector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/framebuffer_160x120_write.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frame_buffer_160x120_draw_erase
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/ISP.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ISP
+INFO: [VRFC 10-2458] undeclared symbol rclk, assumed default net type wire [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/ISP.sv:53]
+INFO: [VRFC 10-311] analyzing module chromakey
+INFO: [VRFC 10-311] analyzing module background_rom
+INFO: [VRFC 10-311] analyzing module gaussian
+INFO: [VRFC 10-311] analyzing module sobel_filter
+INFO: [VRFC 10-311] analyzing module checkerboard_mask
+INFO: [VRFC 10-311] analyzing module cartoon_filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/UpDownNumber.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module updown_number
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/User_Tracking_UART_Tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module User_Tracking_UART_Tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MeanShiftCore
+INFO: [VRFC 10-311] analyzing module MeanShift_ControlUnit
+INFO: [VRFC 10-311] analyzing module MeanShift_Datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scale_Calc
+INFO: [VRFC 10-311] analyzing module sqrt_lut
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/MeanShiftCore_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MeanShiftCore_tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_uart.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_uart
+INFO: [VRFC 10-2458] undeclared symbol uart_start_btn, assumed default net type wire [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_uart.sv:26]
+INFO: [VRFC 10-2458] undeclared symbol tx, assumed default net type wire [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_uart.sv:87]
+INFO: [VRFC 10-2458] undeclared symbol tx_done, assumed default net type wire [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_uart.sv:88]
+INFO: [VRFC 10-2458] undeclared symbol oe, assumed default net type wire [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_uart.sv:105]
+INFO: [VRFC 10-2458] undeclared symbol w_rclk, assumed default net type wire [D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_uart.sv:129]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_Histogram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Histogram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_scale.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ScaleController
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/work_2/FPGA_Harman_Final_Project/0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sim_1/new/tb_camshift.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mean_scale_xy

@@ -1,0 +1,410 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul 22 20:04:13 2025
+# Process ID: 13392
+# Current directory: D:/work_2/FPGA_Harman_Final_Project/0722_histogram
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26464 D:\work_2\FPGA_Harman_Final_Project\0722_histogram\250530_VGA_OV670.xpr
+# Log file: D:/work_2/FPGA_Harman_Final_Project/0722_histogram/vivado.log
+# Journal file: D:/work_2/FPGA_Harman_Final_Project/0722_histogram\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Working/harman/0722_histogram' since last save.
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'D:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store', nor could it be found using path 'C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store'.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.gen/sources_1', nor could it be found using path 'C:/Working/harman/0722_histogram/250530_VGA_OV670.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-06:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1107.648 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB7B2BA
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Jul 22 20:31:57 2025] Launched synth_1...
+Run output will be captured here: D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/synth_1/runme.log
+[Tue Jul 22 20:31:57 2025] Launched impl_1...
+Run output will be captured here: D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Jul 22 20:37:59 2025] Launched synth_1...
+Run output will be captured here: D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/synth_1/runme.log
+[Tue Jul 22 20:37:59 2025] Launched impl_1...
+Run output will be captured here: D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Jul 22 20:43:29 2025] Launched synth_1...
+Run output will be captured here: D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/synth_1/runme.log
+[Tue Jul 22 20:43:29 2025] Launched impl_1...
+Run output will be captured here: D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Jul 22 20:59:14 2025] Launched synth_1...
+Run output will be captured here: D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/synth_1/runme.log
+[Tue Jul 22 20:59:14 2025] Launched impl_1...
+Run output will be captured here: D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Jul 22 21:02:21 2025] Launched synth_1...
+Run output will be captured here: D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/synth_1/runme.log
+[Tue Jul 22 21:02:21 2025] Launched impl_1...
+Run output will be captured here: D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: OV7670_VGA_Display
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3178.000 ; gain = 265.219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'OV7670_VGA_Display' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:3]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter FIRST_BYTE bound to: 1 - type: integer 
+	Parameter SECOND_BYTE bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'btn_debounce' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/btn_debounce.v:2]
+	Parameter DEBOUNCE_COUNT bound to: 1000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'btn_debounce' (1#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/btn_debounce.v:2]
+INFO: [Synth 8-6157] synthesizing module 'btn_debounce_keep' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/btn_debounce_keep.v:23]
+	Parameter DEBOUNCE_COUNT bound to: 1000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'btn_debounce_keep' (2#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/btn_debounce_keep.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SCCB_intf' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'I2C_clk_gen' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:298]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_clk_gen' (3#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:298]
+INFO: [Synth 8-6157] synthesizing module 'SCCB_controlUnit' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:45]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:99]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:199]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:223]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:247]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:274]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:182]
+INFO: [Synth 8-6155] done synthesizing module 'SCCB_controlUnit' (4#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:45]
+INFO: [Synth 8-6157] synthesizing module 'OV7670_config_rom' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:329]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_config_rom' (5#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:329]
+INFO: [Synth 8-6155] done synthesizing module 'SCCB_intf' (6#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'pixel_clk_gen' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_clk_gen' (7#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:49]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Controller' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'pixel_counter' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:73]
+	Parameter H_MAX bound to: 800 - type: integer 
+	Parameter V_MAX bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pixel_counter' (8#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:73]
+INFO: [Synth 8-6157] synthesizing module 'vga_decoder' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:108]
+	Parameter H_Visible_area bound to: 640 - type: integer 
+	Parameter H_Front_porch bound to: 16 - type: integer 
+	Parameter H_Sync_pulse bound to: 96 - type: integer 
+	Parameter H_Back_porch bound to: 48 - type: integer 
+	Parameter H_Whole_line bound to: 800 - type: integer 
+	Parameter V_Visible_area bound to: 480 - type: integer 
+	Parameter V_Front_porch bound to: 10 - type: integer 
+	Parameter V_Sync_pulse bound to: 2 - type: integer 
+	Parameter V_Back_porch bound to: 33 - type: integer 
+	Parameter V_Whole_frame bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_decoder' (9#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:108]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Controller' (10#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'OV7670_MemController' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/OV7670_MemController.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_MemController' (11#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/OV7670_MemController.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'HSV_Filter' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/HSV_Filter.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSV_Filter' (12#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/HSV_Filter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Histogram' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Histogram_Control_Unit' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:30]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter START bound to: 1 - type: integer 
+	Parameter SAVE bound to: 2 - type: integer 
+	Parameter FIND_MAX bound to: 3 - type: integer 
+	Parameter X_max bound to: 160 - type: integer 
+	Parameter X_min bound to: 80 - type: integer 
+	Parameter Y_max bound to: 120 - type: integer 
+	Parameter Y_min bound to: 60 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Histogram_Control_Unit' (13#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:30]
+INFO: [Synth 8-6157] synthesizing module 'Histrogram_ram' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:140]
+INFO: [Synth 8-6155] done synthesizing module 'Histrogram_ram' (14#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:140]
+INFO: [Synth 8-6155] done synthesizing module 'Histogram' (15#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'BackProjection' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'SimilarityCalc' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'SimilarityCalc' (16#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:37]
+INFO: [Synth 8-6157] synthesizing module 'BPBuffer' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'BPBuffer' (17#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'BackProjection' (18#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ISP_for_pen' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'cursor_detector' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:93]
+	Parameter margin bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cursor_detector' (19#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:93]
+INFO: [Synth 8-6157] synthesizing module 'erosion' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:108]
+INFO: [Synth 8-6155] done synthesizing module 'erosion' (20#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:108]
+INFO: [Synth 8-6157] synthesizing module 'dense_pixel' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:162]
+	Parameter heart bound to: 400'b0000000010101010000000001010101000000000000010100001000110101010000100011010000010100001100100010001000100010001000110101010000110010001000100010001000100011010101000010001000100010001000100010001101000001010000100010001000100010001101000000000000010100001000100010001101000000000000000000000101000010001101000000000000000000000000000001010101000000000000000000000000000000000000000000000000000000000 
+	Parameter glasses bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000010101010101010101010101010101010101010101010100110101010101010101001101010101010000010101001101000000000101010011010101000000000101010100000000000001010101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter glitter bound to: 400'b0000000000000000101000000000000000000000000000000000101000111010000000000000000000000000000010100011101000000000000000000000101010100011001110011010101000000000101000110011001100110011100100111010000000001010101000110011001110101010000000000000000010100011001100111010000000000000000000000000101000111010000000000000000000000000000010100011101000000000000000000000000000000000101000000000000000000000 
+	Parameter smile bound to: 400'b0000000010101010101010101010101000000000000010100011001100110011001100111010000010100011001100110011001100110011001110101010001100111010001100111010001100111010101000110011001100110011001100110011101010100011101000110011001100111010001110101010001100111010101010101010001100111010101000110011001100110011001100110011101000001010001100110011001100110011101000000000000010101010101010101010101000000000 
+	Parameter h bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000000000000010100000000000000000000010100000000000001010000000000000000000001010101010101010101000000000000000000000101000000000000010100000000000000000000010100000000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter a bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000001010000010100000000000000000000000001010101010101010101000000000000000000000101000000000000010100000000000000000000010100000000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter r bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010101010100000000000000000000000001010000000001010000000000000000000000000000010101010101000000000000000000000000000001010000010100000000000000000000000001010000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter m bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000000000000010100000000000000000000010101010000010101010000000000000000000001010000010100000101000000000000000000000101000000000000010100000000000000000000010100000000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter n bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000000000000010100000000000000000000010100000000010101010000000000000000000001010000010100000101000000000000000000000101000001010000010100000000000000000000010101010000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_red bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_orange bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_yellow bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_green bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_blue bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_purple bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter eraser bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000101010100000000000000000000000000000101010011001101000000000000000000000101001101010100110011010000000000000101001100110011010101001101000000000101001100110011001100110101000000000000010100110011001100110101000000000000000000000101001100110101000000000000000000000000000001010101000000000000000000000000000000000000000000000000000000000 
+	Parameter no_color bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter alpha bound to: 4'b0100 
+INFO: [Synth 8-226] default block is never used [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:2229]
+INFO: [Synth 8-6155] done synthesizing module 'dense_pixel' (21#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:162]
+INFO: [Synth 8-6155] done synthesizing module 'ISP_for_pen' (22#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer_320x240' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/frame_buffer_320x240.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer_320x240' (23#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/frame_buffer_320x240.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_div_100M_to_10Hz' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:511]
+	Parameter COUNT_MAX bound to: 4999999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div_100M_to_10Hz' (24#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:511]
+INFO: [Synth 8-6157] synthesizing module 'reg_x_y' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:489]
+INFO: [Synth 8-6155] done synthesizing module 'reg_x_y' (25#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:489]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer_160x120_cursor' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/frame_buffer.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer_160x120_cursor' (26#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/frame_buffer.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'QVGA_MemController' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/QVGA_MemController.sv:4]
+	Parameter default_rgb bound to: 12'b111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'QVGA_MemController' (27#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/QVGA_MemController.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'fndController' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_div_1khz' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div_1khz' (28#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:92]
+INFO: [Synth 8-6157] synthesizing module 'counter_2bit' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'counter_2bit' (29#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:115]
+INFO: [Synth 8-6157] synthesizing module 'decoder_2x4' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:132]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_2x4' (30#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:132]
+INFO: [Synth 8-6157] synthesizing module 'digitSplitter' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'digitSplitter' (31#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:147]
+INFO: [Synth 8-6157] synthesizing module 'mux_4x1' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4x1' (32#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:160]
+INFO: [Synth 8-6157] synthesizing module 'BCDtoSEG_decoder' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:179]
+INFO: [Synth 8-226] default block is never used [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'BCDtoSEG_decoder' (33#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:179]
+INFO: [Synth 8-6157] synthesizing module 'mux_4x1_1bit' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4x1_1bit' (34#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'fndController' (35#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gesture' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:3]
+	Parameter DIR_NONE bound to: 4'b0000 
+	Parameter DIR_RIGHT bound to: 4'b0001 
+	Parameter DIR_RIGHT_DOWN bound to: 4'b0010 
+	Parameter DIR_DOWN bound to: 4'b0011 
+	Parameter DIR_LEFT_DOWN bound to: 4'b0100 
+	Parameter DIR_LEFT bound to: 4'b0101 
+	Parameter DIR_LEFT_UP bound to: 4'b0110 
+	Parameter DIR_UP bound to: 4'b0111 
+	Parameter DIR_RIGHT_UP bound to: 4'b1000 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:226]
+INFO: [Synth 8-6155] done synthesizing module 'gesture' (36#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'gesture_to_number' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:331]
+	Parameter DIR_NONE bound to: 4'b0000 
+	Parameter DIR_RIGHT bound to: 4'b0001 
+	Parameter DIR_RIGHT_DOWN bound to: 4'b0010 
+	Parameter DIR_DOWN bound to: 4'b0011 
+	Parameter DIR_LEFT_DOWN bound to: 4'b0100 
+	Parameter DIR_LEFT bound to: 4'b0101 
+	Parameter DIR_LEFT_UP bound to: 4'b0110 
+	Parameter DIR_UP bound to: 4'b0111 
+	Parameter DIR_RIGHT_UP bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'gesture_to_number' (37#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:331]
+INFO: [Synth 8-6157] synthesizing module 'UART_TX' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:23]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter SEND bound to: 1 - type: integer 
+	Parameter START bound to: 2 - type: integer 
+	Parameter D bound to: 3 - type: integer 
+	Parameter STOP bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'UART_TX' (38#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'baud_tick_genp' [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:156]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter BAUD_COUNT bound to: 651 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'baud_tick_genp' (39#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:156]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_VGA_Display' (40#1) [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3397.949 ; gain = 485.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3401.270 ; gain = 488.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3401.270 ; gain = 488.488
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 3401.270 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/constrs_1/imports/250530_VGA_OV670/Basys-3-Master.xdc]
+Finished Parsing XDC File [D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.srcs/constrs_1/imports/250530_VGA_OV670/Basys-3-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3506.320 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 3609.770 ; gain = 696.988
+93 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 3609.770 ; gain = 978.398
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+show_objects -name hue_max_done [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ OTHERS.*.* } ]
+show_objects -name hue_max_done [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Jul 22 21:18:12 2025] Launched synth_1...
+Run output will be captured here: D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/synth_1/runme.log
+[Tue Jul 22 21:18:12 2025] Launched impl_1...
+Run output will be captured here: D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work_2/FPGA_Harman_Final_Project/0722_histogram/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 22 21:22:30 2025...

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_uart_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_uart" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="210520995000fs"></ZoomStartTime>
+      <ZoomEndTime time="223730995001fs"></ZoomEndTime>
+      <Cursor1Time time="221520995000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="234"></NameColumnWidth>
+      <ValueColumnWidth column_width="113"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="30" />
+   <wvobject fp_name="/tb_uart/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/two_byte_done" type="logic">
+      <obj_property name="ElementShortName">two_byte_done</obj_property>
+      <obj_property name="ObjectShortName">two_byte_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/x_count" type="array">
+      <obj_property name="ElementShortName">x_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">x_count[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/y_count" type="array">
+      <obj_property name="ElementShortName">y_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">y_count[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/keep_start" type="logic">
+      <obj_property name="ElementShortName">keep_start</obj_property>
+      <obj_property name="ObjectShortName">keep_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/all_trans_complete" type="logic">
+      <obj_property name="ElementShortName">all_trans_complete</obj_property>
+      <obj_property name="ObjectShortName">all_trans_complete</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/next" type="array">
+      <obj_property name="ElementShortName">next[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/x_coord" type="array">
+      <obj_property name="ElementShortName">x_coord[9:0]</obj_property>
+      <obj_property name="ObjectShortName">x_coord[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/y_coord" type="array">
+      <obj_property name="ElementShortName">y_coord[9:0]</obj_property>
+      <obj_property name="ObjectShortName">y_coord[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/rAddr_320x240" type="array">
+      <obj_property name="ElementShortName">rAddr_320x240[16:0]</obj_property>
+      <obj_property name="ObjectShortName">rAddr_320x240[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/tx_data" type="array">
+      <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/cu_state" type="logic">
+      <obj_property name="ElementShortName">cu_state</obj_property>
+      <obj_property name="ObjectShortName">cu_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/red_port" type="array">
+      <obj_property name="ElementShortName">red_port[3:0]</obj_property>
+      <obj_property name="ObjectShortName">red_port[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/green_port" type="array">
+      <obj_property name="ElementShortName">green_port[3:0]</obj_property>
+      <obj_property name="ObjectShortName">green_port[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/blue_port" type="array">
+      <obj_property name="ElementShortName">blue_port[3:0]</obj_property>
+      <obj_property name="ObjectShortName">blue_port[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uart_start_btn" type="logic">
+      <obj_property name="ElementShortName">uart_start_btn</obj_property>
+      <obj_property name="ObjectShortName">uart_start_btn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/start_trigger" type="logic">
+      <obj_property name="ElementShortName">start_trigger</obj_property>
+      <obj_property name="ObjectShortName">start_trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/tx" type="logic">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/tx_done" type="logic">
+      <obj_property name="ElementShortName">tx_done</obj_property>
+      <obj_property name="ObjectShortName">tx_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/tx_finish" type="logic">
+      <obj_property name="ElementShortName">tx_finish</obj_property>
+      <obj_property name="ObjectShortName">tx_finish</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/oe" type="logic">
+      <obj_property name="ElementShortName">oe</obj_property>
+      <obj_property name="ObjectShortName">oe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/qvga_rData" type="array">
+      <obj_property name="ElementShortName">qvga_rData[11:0]</obj_property>
+      <obj_property name="ObjectShortName">qvga_rData[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/IDLE" type="array">
+      <obj_property name="ElementShortName">IDLE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/FIRST_BYTE" type="array">
+      <obj_property name="ElementShortName">FIRST_BYTE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FIRST_BYTE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/SECOND_BYTE" type="array">
+      <obj_property name="ElementShortName">SECOND_BYTE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SECOND_BYTE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/U_QVGA_MemController/rData" type="array">
+      <obj_property name="ElementShortName">rData[11:0]</obj_property>
+      <obj_property name="ObjectShortName">rData[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/U_FrameBuffer_320x240/rData" type="array">
+      <obj_property name="ElementShortName">rData[11:0]</obj_property>
+      <obj_property name="ObjectShortName">rData[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/dut_uart/w_tick" type="logic">
+      <obj_property name="ElementShortName">w_tick</obj_property>
+      <obj_property name="ObjectShortName">w_tick</obj_property>
+   </wvobject>
+</wave_config>

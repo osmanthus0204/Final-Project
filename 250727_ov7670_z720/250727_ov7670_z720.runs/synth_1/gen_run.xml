@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1753756620">
+  <File Type="PA-TCL" Name="OV7640_HDMI_Display.tcl"/>
+  <File Type="REPORTS-TCL" Name="OV7640_HDMI_Display_reports.tcl"/>
+  <File Type="RDS-RDS" Name="OV7640_HDMI_Display.vds"/>
+  <File Type="RDS-UTIL" Name="OV7640_HDMI_Display_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="OV7640_HDMI_Display_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="OV7640_HDMI_Display.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/250718_HDMI/HDMI_TX_TOP.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../250718_HDMI/250718_HDMI.srcs/sources_1/imports/250718_HDMI/HDMI_TX_TOP.v"/>
+        <Attr Name="ImportTime" Val="1752926650"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/250718_HDMI/TMDS_encoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../250718_HDMI/250718_HDMI.srcs/sources_1/imports/250718_HDMI/TMDS_encoder.v"/>
+        <Attr Name="ImportTime" Val="1752802841"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/BackProjection.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv"/>
+        <Attr Name="ImportTime" Val="1753274686"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/HSV_Filter.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/HSV_Filter.sv"/>
+        <Attr Name="ImportTime" Val="1753179268"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Histogram.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv"/>
+        <Attr Name="ImportTime" Val="1753327884"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/MeanShiftCore.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv"/>
+        <Attr Name="ImportTime" Val="1753529730"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/250718_HDMI/OV7670_Controller.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/250718_HDMI/frame_buffer.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../250718_HDMI/250718_HDMI.srcs/sources_1/imports/250718_HDMI/frame_buffer.sv"/>
+        <Attr Name="ImportTime" Val="1752925141"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/scale_Calc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../0725_camShift/0723_histogram/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv"/>
+        <Attr Name="ImportTime" Val="1753531254"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/250718_HDMI/sccb.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../250718_HDMI/250718_HDMI.srcs/sources_1/imports/250718_HDMI/sccb.sv"/>
+        <Attr Name="ImportTime" Val="1749089300"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/250718_HDMI/OV7670_HDMI_Display.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/250718_HDMI/btn_debounce.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../250718_HDMI/250718_HDMI.srcs/sources_1/imports/250718_HDMI/btn_debounce.v"/>
+        <Attr Name="ImportTime" Val="1749517508"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/sqrt_table.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="OV7640_HDMI_Display"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/250718_HDMI/Zybo-Z7-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../250718_HDMI/250718_HDMI.srcs/constrs_1/imports/250718_HDMI/Zybo-Z7-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1752989622"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 28 13:20:01 2025
+# Process ID: 42156
+# Current directory: D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1
+# Command line: vivado.exe -log OV7640_HDMI_Display.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source OV7640_HDMI_Display.tcl -notrace
+# Log file: D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1/OV7640_HDMI_Display.vdi
+# Journal file: D:/work_2/FPGA_Harman_Final_Project/250727_ov7670_z720/250727_ov7670_z720.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source OV7640_HDMI_Display.tcl -notrace

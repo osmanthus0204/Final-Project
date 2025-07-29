@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="impl_1" LaunchDir="C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

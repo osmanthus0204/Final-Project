@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul 29 12:02:43 2025
+# Process ID: 2728
+# Current directory: C:/Users/kccistc/Desktop/250727_ov7670_z720
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19516 C:\Users\kccistc\Desktop\250727_ov7670_z720\250727_ov7670_z720.xpr
+# Log file: C:/Users/kccistc/Desktop/250727_ov7670_z720/vivado.log
+# Journal file: C:/Users/kccistc/Desktop/250727_ov7670_z720\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kccistc/Desktop/250727_ov7670_z720/250727_ov7670_z720.xpr
+update_compile_order -fileset sources_1
+set_property board_part digilentinc.com:zybo-z7-20:part0:1.2 [current_project]
+synth_design -rtl -rtl_skip_mlo -name rtl_1

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul 29 12:16:06 2025
+# Process ID: 12244
+# Current directory: C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22384 C:\Users\kccistc\Desktop\FINAL_PROJECT\0729_camShift_Gesture_cursor_demo (2)\0729_camShift_Gesture_cursor_demo\0729_camShift_Gesture\25250727_camShift\250530_VGA_OV670.xpr
+# Log file: C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/vivado.log
+# Journal file: C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.xpr}
+synth_design -rtl -rtl_skip_mlo -name rtl_1

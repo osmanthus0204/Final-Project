@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 28 19:02:56 2025
+# Process ID: 5080
+# Current directory: C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.runs/impl_1
+# Command line: vivado.exe -log OV7670_VGA_Display.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source OV7670_VGA_Display.tcl -notrace
+# Log file: C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.vdi
+# Journal file: C:/Working/Harman/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source OV7670_VGA_Display.tcl -notrace

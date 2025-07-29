@@ -1,0 +1,404 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 12244
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Jul 29 12:16:19 KST 2025
+Time zone: 	Korean Standard Time (Asia/Seoul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	kccistc
+User home directory: C:/Users/kccistc
+User working directory: C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift
+User country: 	KR
+User language: 	ko
+User locale: 	ko_KR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/vivado.log
+Vivado journal file location: 	C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/vivado.jou
+Engine tmp dir: 	C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/.Xil/Vivado-12244-DESKTOP-7CFQ9ND
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_SDK: C:/Xilinx/Vitis/2020.2
+XILINX_VITIS: C:/Xilinx/Vitis/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	171 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,116 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 110 MB (+112358kb) [00:00:08]
+// [Engine Memory]: 1,116 MB (+1019206kb) [00:00:08]
+// [GUI Memory]: 124 MB (+9869kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  2098 ms.
+// Tcl Message: open_project {C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,116 MB. GUI used memory: 80 MB. Current time: 7/29/25, 12:16:19 PM KST
+// Project name: 250530_VGA_OV670; location: C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 155 MB (+25258kb) [00:00:18]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-1 Top: OV7670_VGA_Display 
+// TclEventType: ELABORATE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 1,707 MB. GUI used memory: 84 MB. Current time: 7/29/25, 12:16:39 PM KST
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,725 MB. GUI used memory: 83 MB. Current time: 7/29/25, 12:16:44 PM KST
+// [Engine Memory]: 1,725 MB (+579633kb) [00:00:35]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,837 MB (+27347kb) [00:00:36]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1399 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1472.543 ; gain = 253.258 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'OV7670_VGA_Display' [C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:3] 
+// Tcl Message: 	Parameter IDLE bound to: 0 - type: integer  	Parameter WAIT bound to: 1 - type: integer  	Parameter FIRST bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'btn_debounce' [C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/btn_debounce.v:2] 
+// Tcl Message: 	Parameter DEBOUNCE_COUNT bound to: 1000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'btn_debounce' (1#1) [C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/btn_debounce.v:2] INFO: [Synth 8-6157] synthesizing module 'btn_rf' [C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/btn_rf.sv:1] 
+// Tcl Message: 	Parameter HIGH_THRESHOLD bound to: 100000 - type: integer  	Parameter LOW_THRESHOLD bound to: 1000000 - type: integer  
+// Tcl Message: 	Parameter H_MAX bound to: 800 - type: integer  	Parameter V_MAX bound to: 525 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'pixel_counter' (8#1) [C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:73] INFO: [Synth 8-6157] synthesizing module 'vga_decoder' [C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:108] 
+// Tcl Message: 	Parameter H_Visible_area bound to: 640 - type: integer  	Parameter H_Front_porch bound to: 16 - type: integer  	Parameter H_Sync_pulse bound to: 96 - type: integer  	Parameter H_Back_porch bound to: 48 - type: integer  	Parameter H_Whole_line bound to: 800 - type: integer  	Parameter V_Visible_area bound to: 480 - type: integer  	Parameter V_Front_porch bound to: 10 - type: integer  	Parameter V_Sync_pulse bound to: 2 - type: integer  	Parameter V_Back_porch bound to: 33 - type: integer  	Parameter V_Whole_frame bound to: 525 - type: integer  
+// Tcl Message: 	Parameter IDLE bound to: 0 - type: integer  	Parameter START bound to: 1 - type: integer  	Parameter SAVE bound to: 2 - type: integer  	Parameter FIND_MAX bound to: 3 - type: integer  	Parameter X_max bound to: 160 - type: integer  	Parameter X_min bound to: 80 - type: integer  	Parameter Y_max bound to: 120 - type: integer  	Parameter Y_min bound to: 60 - type: integer  
+// Tcl Message: 	Parameter margin bound to: 1 - type: integer  
+// Tcl Message: 	Parameter COUNT_MAX bound to: 4999999 - type: integer  
+// Tcl Message: 	Parameter IDLE bound to: 0 - type: integer  	Parameter START_RIGHT bound to: 1 - type: integer  	Parameter START_LEFT bound to: 2 - type: integer  	Parameter default_rgb bound to: 12'b111111111111  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/QVGA_MemController.sv:136] INFO: [Synth 8-6155] done synthesizing module 'QVGA_MemController' (34#1) [C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/QVGA_MemController.sv:3] 
+// Tcl Message: 	Parameter DIR_NONE bound to: 3'b000  	Parameter DIR_RIGHT bound to: 3'b001  	Parameter DIR_DOWN bound to: 3'b010  	Parameter DIR_LEFT bound to: 3'b011  	Parameter DIR_UP bound to: 3'b100  
+// Tcl Message: 	Parameter DIR_NONE bound to: 3'b000  	Parameter DIR_RIGHT bound to: 3'b001  	Parameter DIR_DOWN bound to: 3'b010  	Parameter DIR_LEFT bound to: 3'b011  	Parameter DIR_UP bound to: 3'b100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gesture_to_number' (44#1) [C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:244] INFO: [Synth 8-6157] synthesizing module 'UART_TX' [C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:23] 
+// Tcl Message: 	Parameter IDLE bound to: 0 - type: integer  	Parameter SEND bound to: 1 - type: integer  	Parameter START bound to: 2 - type: integer  	Parameter D bound to: 3 - type: integer  	Parameter STOP bound to: 4 - type: integer  
+// Tcl Message: 	Parameter BAUD_RATE bound to: 9600 - type: integer  	Parameter BAUD_COUNT bound to: 651 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'baud_tick_genp' (46#1) [C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:156] INFO: [Synth 8-6155] done synthesizing module 'OV7670_VGA_Display' (47#1) [C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1759.262 ; gain = 539.977 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1759.262 ; gain = 539.977 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1759.262 ; gain = 539.977 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1759.262 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/constrs_1/imports/250530_VGA_OV670/Basys-3-Master.xdc] Finished Parsing XDC File [C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/constrs_1/imports/250530_VGA_OV670/Basys-3-Master.xdc] Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1826.840 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 1960.070 ; gain = 740.785 
+// Tcl Message: 112 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1960.070 ; gain = 856.355 
+// [GUI Memory]: 164 MB (+1396kb) [00:00:38]
+// 'dV' command handler elapsed time: 19 seconds
+// Elapsed time: 18 seconds
+dismissDialog("Open Elaborated Design"); // bz
+// [GUI Memory]: 186 MB (+14397kb) [00:08:31]
+// Elapsed time: 831 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 5, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROI_KalmanFilter (KalmanFilter.sv)]", 3); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROI_KalmanFilter (KalmanFilter.sv)]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ISP (ISP.sv)]", 2); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ISP (ISP.sv)]", 2); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_ISP_PEN : ISP_for_pen (ISP_for_pen.sv)]", 16); // D
+// HMemoryUtils.trashcanNow. Engine heap size: 1,879 MB. GUI used memory: 114 MB. Current time: 7/29/25, 12:30:59 PM KST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_ISP_PEN : ISP_for_pen (ISP_for_pen.sv)]", 16, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_ISP_PEN : ISP_for_pen (ISP_for_pen.sv)]", 16, true, false, false, false, false, true); // D - Double Click - Node
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv":3'
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 48 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_QVGA_MemController : QVGA_MemController (QVGA_MemController.sv)]", 26, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_clk_div_100m_to_10 : clk_div_100M_to_10Hz (OV7670_VGA_Display.sv)]", 21, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_FRAME_BUFFER_160x120_cursor : frame_buffer_160x120_cursor (frame_buffer.sv)]", 24, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_FRAME_BUFFER_160x120_cursor : frame_buffer_160x120_cursor (frame_buffer.sv)]", 24, false, false, false, false, false, true); // D - Double Click
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/frame_buffer.sv":5'
+// Elapsed time: 51 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 916 seconds
+selectButton(RDIResource.QuickHelp_HELP, (String) null); // k
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // E
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 118 MB. Current time: 7/29/25, 1:01:00 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 110 MB. Current time: 7/29/25, 1:31:00 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 2:01:00 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 2:31:01 PM KST
+// Elapsed time: 6316 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Bus Net Properties"); // az
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "Sources_search"); // x: TRUE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_ISP_PEN : ISP_for_pen (ISP_for_pen.sv), U_EROSION : erosion (ISP_for_pen.sv)]", 18, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_FndController : fndController (fndController.v)]", 27, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_gesture : gesture (gesture.sv)]", 28, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_gesture_to_number : gesture_to_number (gesture.sv)]", 29, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_gesture_to_number : gesture_to_number (gesture.sv)]", 29, false, false, false, false, false, true); // D - Double Click
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv":244'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 3:01:03 PM KST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1666 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 3:31:05 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 4:01:06 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 108 MB. Current time: 7/29/25, 4:31:06 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 5:01:06 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 5:31:06 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 6:01:07 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 6:31:09 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 7:01:12 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 7:31:15 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 8:01:17 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 8:31:20 PM KST
+// Elapsed time: 23203 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_MUX_3X1 : mux3x1 (OV7670_VGA_Display.sv)]", 25, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_gesture : gesture (gesture.sv)]", 28, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV7670_VGA_Display (OV7670_VGA_Display.sv), U_gesture : gesture (gesture.sv)]", 28, false, false, false, false, false, true); // D - Double Click
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "C:/Users/kccistc/Desktop/FINAL_PROJECT/0729_camShift_Gesture_cursor_demo (2)/0729_camShift_Gesture_cursor_demo/0729_camShift_Gesture/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv":3'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 9:01:23 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 9:31:23 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 10:01:23 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 108 MB. Current time: 7/29/25, 10:31:24 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 108 MB. Current time: 7/29/25, 11:01:24 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/29/25, 11:31:24 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 108 MB. Current time: 7/30/25, 12:01:25 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/30/25, 12:31:27 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/30/25, 1:01:29 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/30/25, 1:31:32 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/30/25, 2:01:35 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,883 MB. GUI used memory: 109 MB. Current time: 7/30/25, 2:31:38 AM KST

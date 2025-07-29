@@ -1,0 +1,321 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jul 27 19:52:41 2025
+# Process ID: 18900
+# Current directory: C:/Working/Harman/25250727_camShift
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17792 C:\Working\Harman\25250727_camShift\250530_VGA_OV670.xpr
+# Log file: C:/Working/Harman/25250727_camShift/vivado.log
+# Journal file: C:/Working/Harman/25250727_camShift\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Working/Harman/25250727_camShift/250530_VGA_OV670.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Working/harman_verilog/25250727_camShift' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Working/Harman/25250727_camShift/250530_VGA_OV670.gen/sources_1', nor could it be found using path 'C:/Working/harman_verilog/25250727_camShift/250530_VGA_OV670.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B9AD3EA
+set_property PROGRAM.FILE {C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Jul 27 20:17:55 2025] Launched synth_1...
+Run output will be captured here: C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/synth_1/runme.log
+[Sun Jul 27 20:17:55 2025] Launched impl_1...
+Run output will be captured here: C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/impl_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: OV7670_VGA_Display
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 3127.418 ; gain = 261.742
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'OV7670_VGA_Display' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:3]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter WAIT bound to: 1 - type: integer 
+	Parameter FIRST bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'btn_debounce' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/btn_debounce.v:2]
+	Parameter DEBOUNCE_COUNT bound to: 1000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'btn_debounce' (1#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/btn_debounce.v:2]
+INFO: [Synth 8-6157] synthesizing module 'btn_debounce_keep' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/btn_debounce_keep.v:23]
+	Parameter DEBOUNCE_COUNT bound to: 1000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'btn_debounce_keep' (2#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/btn_debounce_keep.v:23]
+WARNING: [Synth 8-6104] Input port 'gesture_btn2' has an internal driver [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:176]
+INFO: [Synth 8-6157] synthesizing module 'SCCB_intf' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'I2C_clk_gen' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:298]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_clk_gen' (3#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:298]
+INFO: [Synth 8-6157] synthesizing module 'SCCB_controlUnit' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:45]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:99]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:199]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:223]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:247]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:274]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:182]
+INFO: [Synth 8-6155] done synthesizing module 'SCCB_controlUnit' (4#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:45]
+INFO: [Synth 8-6157] synthesizing module 'OV7670_config_rom' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:329]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_config_rom' (5#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:329]
+INFO: [Synth 8-6155] done synthesizing module 'SCCB_intf' (6#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/sccb.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'pixel_clk_gen' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_clk_gen' (7#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:49]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Controller' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'pixel_counter' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:73]
+	Parameter H_MAX bound to: 800 - type: integer 
+	Parameter V_MAX bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pixel_counter' (8#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:73]
+INFO: [Synth 8-6157] synthesizing module 'vga_decoder' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:108]
+	Parameter H_Visible_area bound to: 640 - type: integer 
+	Parameter H_Front_porch bound to: 16 - type: integer 
+	Parameter H_Sync_pulse bound to: 96 - type: integer 
+	Parameter H_Back_porch bound to: 48 - type: integer 
+	Parameter H_Whole_line bound to: 800 - type: integer 
+	Parameter V_Visible_area bound to: 480 - type: integer 
+	Parameter V_Front_porch bound to: 10 - type: integer 
+	Parameter V_Sync_pulse bound to: 2 - type: integer 
+	Parameter V_Back_porch bound to: 33 - type: integer 
+	Parameter V_Whole_frame bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_decoder' (9#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:108]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Controller' (10#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/VGA_Controller.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'OV7670_MemController' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_MemController.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_MemController' (11#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_MemController.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'HSV_Filter' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/HSV_Filter.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSV_Filter' (12#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/HSV_Filter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Histogram' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Histogram_Control_Unit' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:30]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter START bound to: 1 - type: integer 
+	Parameter SAVE bound to: 2 - type: integer 
+	Parameter FIND_MAX bound to: 3 - type: integer 
+	Parameter X_max bound to: 160 - type: integer 
+	Parameter X_min bound to: 80 - type: integer 
+	Parameter Y_max bound to: 120 - type: integer 
+	Parameter Y_min bound to: 60 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Histogram_Control_Unit' (13#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:30]
+INFO: [Synth 8-6157] synthesizing module 'Histrogram_ram' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:138]
+INFO: [Synth 8-6155] done synthesizing module 'Histrogram_ram' (14#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:138]
+INFO: [Synth 8-6155] done synthesizing module 'Histogram' (15#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/Histogram.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'BackProjection' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'SimilarityCalc' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'SimilarityCalc' (16#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:37]
+INFO: [Synth 8-6157] synthesizing module 'BPBuffer' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'BPBuffer' (17#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'BackProjection' (18#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/BackProjection.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'MeanShiftCore' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'MeanShift_ControlUnit' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv:41]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv:131]
+INFO: [Synth 8-6155] done synthesizing module 'MeanShift_ControlUnit' (19#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv:41]
+INFO: [Synth 8-6157] synthesizing module 'MeanShift_Datapath' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv:183]
+INFO: [Synth 8-6155] done synthesizing module 'MeanShift_Datapath' (20#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv:183]
+INFO: [Synth 8-6155] done synthesizing module 'MeanShiftCore' (21#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/MeanShiftCore.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'scale_Calc' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv:97]
+INFO: [Synth 8-6157] synthesizing module 'sqrt_lut' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv:167]
+INFO: [Synth 8-3876] $readmem data file 'sqrt_table.mem' is read successfully [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv:179]
+INFO: [Synth 8-6155] done synthesizing module 'sqrt_lut' (22#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv:167]
+INFO: [Synth 8-6155] done synthesizing module 'scale_Calc' (23#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/scale_Calc.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'xy_min_max_calc' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:750]
+INFO: [Synth 8-6155] done synthesizing module 'xy_min_max_calc' (24#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:750]
+INFO: [Synth 8-6157] synthesizing module 'ISP_for_pen' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'cursor_detector' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:93]
+	Parameter margin bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cursor_detector' (25#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:93]
+INFO: [Synth 8-6157] synthesizing module 'erosion' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:108]
+INFO: [Synth 8-6155] done synthesizing module 'erosion' (26#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:108]
+INFO: [Synth 8-6157] synthesizing module 'dense_pixel' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:162]
+	Parameter heart bound to: 400'b0000000010101010000000001010101000000000000010100001000110101010000100011010000010100001100100010001000100010001000110101010000110010001000100010001000100011010101000010001000100010001000100010001101000001010000100010001000100010001101000000000000010100001000100010001101000000000000000000000101000010001101000000000000000000000000000001010101000000000000000000000000000000000000000000000000000000000 
+	Parameter glasses bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000010101010101010101010101010101010101010101010100110101010101010101001101010101010000010101001101000000000101010011010101000000000101010100000000000001010101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter glitter bound to: 400'b0000000000000000101000000000000000000000000000000000101000111010000000000000000000000000000010100011101000000000000000000000101010100011001110011010101000000000101000110011001100110011100100111010000000001010101000110011001110101010000000000000000010100011001100111010000000000000000000000000101000111010000000000000000000000000000010100011101000000000000000000000000000000000101000000000000000000000 
+	Parameter smile bound to: 400'b0000000010101010101010101010101000000000000010100011001100110011001100111010000010100011001100110011001100110011001110101010001100111010001100111010001100111010101000110011001100110011001100110011101010100011101000110011001100111010001110101010001100111010101010101010001100111010101000110011001100110011001100110011101000001010001100110011001100110011101000000000000010101010101010101010101000000000 
+	Parameter h bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000000000000010100000000000000000000010100000000000001010000000000000000000001010101010101010101000000000000000000000101000000000000010100000000000000000000010100000000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter a bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000001010000010100000000000000000000000001010101010101010101000000000000000000000101000000000000010100000000000000000000010100000000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter r bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010101010100000000000000000000000001010000000001010000000000000000000000000000010101010101000000000000000000000000000001010000010100000000000000000000000001010000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter m bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000000000000010100000000000000000000010101010000010101010000000000000000000001010000010100000101000000000000000000000101000000000000010100000000000000000000010100000000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter n bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000000000000010100000000000000000000010100000000010101010000000000000000000001010000010100000101000000000000000000000101000001010000010100000000000000000000010101010000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_red bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_orange bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_yellow bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_green bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_blue bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter draw_purple bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter eraser bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000101010100000000000000000000000000000101010011001101000000000000000000000101001101010100110011010000000000000101001100110011010101001101000000000101001100110011001100110101000000000000010100110011001100110101000000000000000000000101001100110101000000000000000000000000000001010101000000000000000000000000000000000000000000000000000000000 
+	Parameter no_color bound to: 400'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter alpha bound to: 4'b0100 
+INFO: [Synth 8-226] default block is never used [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:2229]
+INFO: [Synth 8-6155] done synthesizing module 'dense_pixel' (27#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:162]
+INFO: [Synth 8-6155] done synthesizing module 'ISP_for_pen' (28#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/ISP_for_pen.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer_320x240' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/frame_buffer_320x240.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer_320x240' (29#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/frame_buffer_320x240.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_div_100M_to_10Hz' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:720]
+	Parameter COUNT_MAX bound to: 4999999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div_100M_to_10Hz' (30#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:720]
+INFO: [Synth 8-6157] synthesizing module 'dis_x_y' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:260]
+INFO: [Synth 8-6155] done synthesizing module 'dis_x_y' (31#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:260]
+WARNING: [Synth 8-689] width (1) of port connection 'x_dis' does not match port width (9) of module 'dis_x_y' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:473]
+WARNING: [Synth 8-689] width (1) of port connection 'y_dis' does not match port width (9) of module 'dis_x_y' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:474]
+WARNING: [Synth 8-689] width (1) of port connection 'x_dis' does not match port width (9) of module 'dis_x_y' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:482]
+WARNING: [Synth 8-689] width (1) of port connection 'y_dis' does not match port width (9) of module 'dis_x_y' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:483]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer_160x120_cursor' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/frame_buffer.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer_160x120_cursor' (32#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/frame_buffer.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'QVGA_MemController' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/QVGA_MemController.sv:3]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter START_RIGHT bound to: 1 - type: integer 
+	Parameter START_LEFT bound to: 2 - type: integer 
+	Parameter default_rgb bound to: 12'b111111111111 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/QVGA_MemController.sv:133]
+INFO: [Synth 8-6155] done synthesizing module 'QVGA_MemController' (33#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/QVGA_MemController.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'fndController' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_div_1khz' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div_1khz' (34#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:92]
+INFO: [Synth 8-6157] synthesizing module 'counter_2bit' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'counter_2bit' (35#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:115]
+INFO: [Synth 8-6157] synthesizing module 'decoder_2x4' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:132]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_2x4' (36#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:132]
+INFO: [Synth 8-6157] synthesizing module 'digitSplitter' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'digitSplitter' (37#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:147]
+INFO: [Synth 8-6157] synthesizing module 'mux_4x1' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4x1' (38#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:160]
+INFO: [Synth 8-6157] synthesizing module 'BCDtoSEG_decoder' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:179]
+INFO: [Synth 8-226] default block is never used [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'BCDtoSEG_decoder' (39#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:179]
+INFO: [Synth 8-6157] synthesizing module 'mux_4x1_1bit' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4x1_1bit' (40#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'fndController' (41#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/250530_VGA_OV670/fndController.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gesture' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:3]
+	Parameter DIR_NONE bound to: 3'b000 
+	Parameter DIR_RIGHT bound to: 3'b001 
+	Parameter DIR_DOWN bound to: 3'b010 
+	Parameter DIR_LEFT bound to: 3'b011 
+	Parameter DIR_UP bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:145]
+INFO: [Synth 8-6155] done synthesizing module 'gesture' (42#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'gesture_to_number' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:234]
+	Parameter DIR_NONE bound to: 3'b000 
+	Parameter DIR_RIGHT bound to: 3'b001 
+	Parameter DIR_DOWN bound to: 3'b010 
+	Parameter DIR_LEFT bound to: 3'b011 
+	Parameter DIR_UP bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'gesture_to_number' (43#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/new/gesture.sv:234]
+INFO: [Synth 8-6157] synthesizing module 'UART_TX' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:23]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter SEND bound to: 1 - type: integer 
+	Parameter START bound to: 2 - type: integer 
+	Parameter D bound to: 3 - type: integer 
+	Parameter STOP bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'UART_TX' (44#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'baud_tick_genp' [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:156]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter BAUD_COUNT bound to: 651 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'baud_tick_genp' (45#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/imports/VGA_code/UART_TX.v:156]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_VGA_Display' (46#1) [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/sources_1/new/OV7670_VGA_Display.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 3391.652 ; gain = 525.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 3395.227 ; gain = 529.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 3395.227 ; gain = 529.551
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 3395.227 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/constrs_1/imports/250530_VGA_OV670/Basys-3-Master.xdc]
+Finished Parsing XDC File [C:/Working/Harman/25250727_camShift/250530_VGA_OV670.srcs/constrs_1/imports/250530_VGA_OV670/Basys-3-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3503.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 3588.375 ; gain = 722.699
+109 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 3588.375 ; gain = 1001.094
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Jul 27 20:23:41 2025] Launched synth_1...
+Run output will be captured here: C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/synth_1/runme.log
+[Sun Jul 27 20:23:41 2025] Launched impl_1...
+Run output will be captured here: C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Jul 27 20:24:04 2025] Launched synth_1...
+Run output will be captured here: C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/synth_1/runme.log
+[Sun Jul 27 20:24:04 2025] Launched impl_1...
+Run output will be captured here: C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Jul 27 20:29:23 2025] Launched synth_1...
+Run output will be captured here: C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/synth_1/runme.log
+[Sun Jul 27 20:29:23 2025] Launched impl_1...
+Run output will be captured here: C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Jul 27 20:56:42 2025] Launched synth_1...
+Run output will be captured here: C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/synth_1/runme.log
+[Sun Jul 27 20:56:43 2025] Launched impl_1...
+Run output will be captured here: C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Jul 27 21:21:47 2025] Launched synth_1...
+Run output will be captured here: C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/synth_1/runme.log
+[Sun Jul 27 21:21:47 2025] Launched impl_1...
+Run output will be captured here: C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Working/Harman/25250727_camShift/250530_VGA_OV670.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B9AD3EA
